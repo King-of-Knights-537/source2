@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: none !important;
+    text-decoration: none !important;
+}
+
+/*Common Selectors*/
+
+section{
+    width: 100%; position: relative;
+}
+section .container{
+    padding-top: 5em;
+}
+section .container h2{
+    font-weight: bold; font-size: 25px;
+    letter-spacing: 1.5px; color: #000;
+    position: relative; left: 10px; top: 5px;
+}
+section .container h2.topic{
+    font-size: 30px; letter-spacing: 8px;
+    font-weight: 500;
+}
+section .container h2.topic::after{
+    content: ""; display: block; margin: auto;
+    margin-top: 0.75em; margin-bottom: 0.5em;
+    width: 105px; height: 0.3em;
+    background-color: #DD3835; border-radius: 50px;
+}
+section .container .col-md-4:hover{
+    transform: translateY(-10px);
+    transition: 0.5s ease all;
+}
+section .container .row{
+    padding-bottom: 4em;
+}
+section .container h3{
+    color: #C4C4C4; letter-spacing: 2px;
+    margin-bottom: 1.5em; 
+    position: relative; left: 5px;
+}
+section .container .introduction h3{
+    font-size: 20px !important; font-weight: 300;
+    letter-spacing: 1px; color: #949494;
+    position: relative; left: 20px; top: 12.5px;
+}
+section .container .introduction h4{
+    color: #DD3835; text-align: right;
+    letter-spacing: 1px; 
+    position: relative; right: 10px;
+}
+section .container img{
+    width: 100%;
+}
+.fixed-top {
+    position: absolute !important;
+    top: 0; right: 0; left: 0;
+    z-index: 1030;
+}
+img{
+    cursor: pointer;
+}
+img.logo:hover{
+    opacity: .7; transition: .5s ease all;
+}
+
+/*Navbar*/
+.collapse-content{
+    background: rgba(165, 20, 18, 0.8);
+    padding: 1.5em; display: flex; 
+}
+.navbar-nav {
+    display: none; flex-direction: row;
+    padding-left: 0; margin-top: 5em;
+    margin-bottom: 2em !important; 
+}
+.navbar > .container-fluid{
+    width: 80%; margin-top: 3em;
+}
+.nav-link{
+    color: #FFF !important; font-size: 25px; 
+    padding: 1em 1em !important; text-align: center;
+}
+.navbar-toggler {
+    padding: 0 !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-toggler-icon{
+    background-image: url(../images/navbar-icon.png) !important;
+    width: 2em !important; height: 2em !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.cross{
+    background-image: url(../images/white-cross.png) !important;
+    width: 2em !important; height: 2em !important;
+    /*Alignment*/
+    position: absolute; top: 4.5em; right: 10.6%;
+}
+
+/*Opening*/
+#opening{
+    height: 120vh !important;
+}
+#opening .jumbotron{
+    background: url(../images/homepage-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; height: 120vh; 
+    position: absolute; color: #FFF;
+}
+#opening .jumbotron .introduction{
+    top: 22%; width: 80%;
+    /*Center Alignment*/
+    position: absolute; left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    text-align: center; 
+}
+#opening .jumbotron .introduction .source img{
+    width: 700px;
+}
+#opening .jumbotron .introduction .quick-action{
+    width: 280px; height: 80px;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 500px; margin-top: 3.5em;
+    /*Outside - Center Alignment*/
+    position: absolute; left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    text-align: center; 
+    /*Inside - Center Alignment*/
+    display: flex; align-items: center;
+    justify-content: center;
+}
+#opening .jumbotron .introduction .quick-action h2{
+    font-size: 25px; line-height: 1.8; 
+    position: relative;
+    top: 1.5px; left: 2px;
+}
+#opening .jumbotron .introduction .mouse{
+    /*Outside - Center Alignment*/
+    position: absolute; left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    text-align: center; margin-top: 12em;
+    animation:loop 2s infinite;
+    -webkit-animation:loop 2s infinite;
+    -moz-animation:loop 2s infinite;
+    cursor: pointer;
+}
+@keyframes loop{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 30px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+/*News*/
+#news .container .introduction{
+    padding-bottom: .5em;
+}
+#news .container .introduction:hover{
+    transition: 0.5s ease all;
+    transition-delay: .2s;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/*Professional*/
+#professional{
+    height: 90vh !important;
+}
+#professional .jumbotron{
+    background: url(../images/modern-workplace.jpg);
+    background-size: cover;
+    background-position: 100%;
+    width: 100%; height: 90vh; 
+    position: absolute; color: #FFF;
+}
+#professional .jumbotron h2{
+    color: #000; 
+}
+#professional .jumbotron article p{
+    color: #000; font-size: 21.5px;
+    font-weight: 500; letter-spacing: 2px;
+    margin-top: 3em;
+}
+
+/*Services*/
+
+/*Our Clients*/
+footer{
+    width: 100%; 
+    position: relative;
+    background: #000;
+}
+footer .container{
+    padding-top: 4em;
+}
+footer .container h2{
+    color: #FFF; font-size: 30px;
+    letter-spacing: 10px;
+}
+footer .container h2.topic::after{
+    content: ""; display: block; margin: auto;
+    margin-top: 0.75em; margin-bottom: 0.5em;
+    width: 100px; height: 0.25em;
+    background-color: #FFF; border-radius: 50px;
+}
+footer .container h3{
+    color: #FFF; letter-spacing: 3px;
+    font-size: 22px; line-height: 2;
+}
+footer h2.copyright{
+    color: #DD3835; font-size: 22px;
+    letter-spacing: 2px; font-weight: 400; 
+    padding-top: 3em; padding-bottom: 2.5em;
+}
+footer .top-button{
+    position: absolute; right:8em; 
+    bottom: 6em; width: 80px;
+    animation:loop 2s infinite;
+    -webkit-animation:loop 2s infinite;
+    -moz-animation:loop 2s infinite;
+    cursor: pointer;
+}
+
+/*Carousel */
+.flexslider {
+    background: none !important; 
+    border: none !important;
+    margin-top: 3em !important;
+    margin-bottom: 5em !important;
+}
+.flexslider .slides img {
+    width: 100%; padding: 0 1em;
+    display: block;
+}
+.flex-direction-nav a{
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 1 !important;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+}
+.flex-direction-nav a:before {
+    font-size: 33.5px !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+.flex-direction-nav .flex-prev {
+    left: -120px !important;
+}
+.flex-direction-nav .flex-next {
+    right: -120px !important;
+    text-align: right;
+}
