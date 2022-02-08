@@ -259,8 +259,8 @@ footer h2.copyright{
     padding-top: 3em; padding-bottom: 2.5em;
 }
 footer .top-button{
-    position: absolute; right: -2.25em; 
-    bottom: 6em; cursor: pointer;
+    position: absolute; right: 3em;
+    bottom: 10em; cursor: pointer;
     animation:loop 2s infinite;
     animation-delay: 5s !important;
     -webkit-animation:loop 2s infinite;
