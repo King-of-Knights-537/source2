@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
-    margin: 0; padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    padding: 0;
 }
 a{
     color: none !important;
     text-decoration: none !important;
 }
+span.noto-sans-tc{
+    font-family: 'Noto Sans TC' !important;
+}
 
 /*Common Selectors*/
 
 section{
-    width: 100%; position: relative;
+    width: 100%; 
+    position: relative;
+    z-index: 2;
 }
 section .container{
     padding-top: 5em;
@@ -31,16 +36,14 @@ section .container h2.topic::after{
     margin-top: 0.75em; margin-bottom: 0.5em;
     width: 105px; height: 0.3em;
     background-color: #DD3835; border-radius: 50px;
-}
-section .container .col-md-4:hover{
-    transform: translateY(-10px);
-    transition: 0.5s ease all;
+    position: relative; left: -4px;
 }
 section .container .row{
     padding-bottom: 4em;
 }
 section .container h3{
     color: #C4C4C4; letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.5em; 
     position: relative; left: 5px;
 }
@@ -51,22 +54,21 @@ section .container .introduction h3{
 }
 section .container .introduction h4{
     color: #DD3835; text-align: right;
-    letter-spacing: 1px; 
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px; font-weight: 700;
     position: relative; right: 10px;
 }
 section .container img{
     width: 100%;
-}
-.fixed-top {
-    position: absolute !important;
-    top: 0; right: 0; left: 0;
-    z-index: 1030;
 }
 img{
     cursor: pointer;
 }
 img.logo:hover{
     opacity: .7; transition: .5s ease all;
+}
+.jumbotron{
+    margin-top: -2px !important;
 }
 
 /*Navbar*/
@@ -78,6 +80,14 @@ img.logo:hover{
     display: none; flex-direction: row;
     padding-left: 0; margin-top: 5em;
     margin-bottom: 2em !important; 
+}
+.navbar {
+    padding-bottom: 2.5em !important;
+}
+.fixed-top {
+    position: absolute !important;
+    top: 0; right: 0; left: 0;
+    z-index: 1 !important;
 }
 .navbar > .container-fluid{
     width: 80%; margin-top: 3em;
@@ -103,17 +113,42 @@ img.logo:hover{
     background-image: url(../images/white-cross.png) !important;
     width: 2em !important; height: 2em !important;
     /*Alignment*/
-    position: absolute; top: 4.5em; right: 10.6%;
+    position: absolute; top: 9.4%; right: 10.75%;
+}
+.mouse{
+    bottom: 20%;
+    /*Outside - Center Alignment*/
+    position: absolute; left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    text-align: center; 
+    animation: loop 2s infinite;
+    animation-delay: 3s !important;
+    -webkit-animation: loop 2s infinite;
+    -moz-animation: loop 2s infinite;
+    cursor: pointer;
+}
+@keyframes loop{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 30px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
 }
 
 /*Opening*/
 #opening{
     height: 120vh !important;
+    z-index: 0;
 }
 #opening .jumbotron{
     background: url(../images/homepage-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50%;
     width: 100%; height: 120vh; 
     position: absolute; color: #FFF;
 }
@@ -139,40 +174,24 @@ img.logo:hover{
     display: flex; align-items: center;
     justify-content: center;
 }
-#opening .jumbotron .introduction .quick-action h2{
+#opening .jumbotron .introduction .quick-action h1{
     font-size: 25px; line-height: 1.8; 
+    letter-spacing: 7px;
     position: relative;
-    top: 1.5px; left: 2px;
-}
-#opening .jumbotron .introduction .mouse{
-    /*Outside - Center Alignment*/
-    position: absolute; left: 0; right: 0;
-    margin-left: auto; margin-right: auto;
-    text-align: center; margin-top: 12em;
-    animation:loop 2s infinite;
-    -webkit-animation:loop 2s infinite;
-    -moz-animation:loop 2s infinite;
-    cursor: pointer;
-}
-@keyframes loop{
-    0%{
-        transform: translate(0px, 0px);
-    }
-    50%{
-        transform: translate(0px, 30px);
-    }
-    100%{
-        transform: translate(0px, 0px);
-    }
+    top: 1.5px; left: 4px;
 }
 
 /*News*/
+#news{
+    background: #FCFCFC;
+}
 #news .container .introduction{
     padding-bottom: .5em;
 }
 #news .container .introduction:hover{
     transition: 0.5s ease all;
-    transition-delay: .2s;
+    transition-delay: 0.15s;
+    transform: translateY(-10px);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
                 rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -187,7 +206,6 @@ img.logo:hover{
     background-size: cover;
     background-position: 100%;
     width: 100%; height: 90vh; 
-    position: absolute; color: #FFF;
 }
 #professional .jumbotron h2{
     color: #000; 
@@ -199,12 +217,17 @@ img.logo:hover{
 }
 
 /*Services*/
+#services{
+    background: #FCFCFC;
+    margin-top: -2px;
+}
 
 /*Our Clients*/
 footer{
-    width: 100%; 
+    width: 100%; height: 90vh;
     position: relative;
     background: #000;
+    z-index: 2;
 }
 footer .container{
     padding-top: 4em;
@@ -218,23 +241,26 @@ footer .container h2.topic::after{
     margin-top: 0.75em; margin-bottom: 0.5em;
     width: 100px; height: 0.25em;
     background-color: #FFF; border-radius: 50px;
+    position: relative; left: -4px;
 }
 footer .container h3{
     color: #FFF; letter-spacing: 3px;
-    font-size: 22px; line-height: 2;
+    font-size: 22px; line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
 }
 footer h2.copyright{
     color: #DD3835; font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px; font-weight: 400; 
     padding-top: 3em; padding-bottom: 2.5em;
 }
 footer .top-button{
-    position: absolute; right:8em; 
-    bottom: 6em; width: 80px;
+    position: absolute; right: -2.25em; 
+    bottom: 6em; cursor: pointer;
     animation:loop 2s infinite;
+    animation-delay: 5s !important;
     -webkit-animation:loop 2s infinite;
     -moz-animation:loop 2s infinite;
-    cursor: pointer;
 }
 
 /*Carousel */
@@ -243,34 +269,187 @@ footer .top-button{
     border: none !important;
     margin-top: 3em !important;
     margin-bottom: 5em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .flexslider .slides img {
     width: 100%; padding: 0 1em;
     display: block;
 }
 .flex-direction-nav a{
-    text-decoration: none;
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0;
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    overflow: hidden;
-    opacity: 1 !important;
+    text-decoration: none; display: block;
+    width: 40px; height: 40px;
+    margin: -20px 0 0; z-index: 10;
+    position: absolute; top: 50%;
+    overflow: hidden; opacity: 1 !important;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.8);
 }
 .flex-direction-nav a:before {
     font-size: 33.5px !important;
     color: #FFF !important;
     text-shadow: none !important;
 }
-.flex-direction-nav .flex-prev {
-    left: -120px !important;
+
+@media only screen and (max-width: 900px) {
+
+    @keyframes loop{
+        0%{
+            transform: translate(0px, 0px);
+        }
+        50%{
+            transform: translate(0px, 20px);
+        }
+        100%{
+            transform: translate(0px, 0px);
+        }
+    }
+
+    img.logo{
+        top: 3.4em; width: 40px;
+        /*Center Alignment*/
+        position: absolute; left: 0; right: 0;
+        margin-left: auto; margin-right: auto;
+        text-align: center; 
+    }
+    .collapse-content{
+        padding-bottom: 1.5em; 
+    }
+    .navbar-nav {
+        margin-top: 6em; 
+    }
+    .navbar > .container-fluid{
+        width: 80%; margin-top: 3em;
+    }
+    .nav-link{ 
+        padding: 0.5em 0em !important; 
+    }
+    .navbar-toggler {
+        font-size: 1.1em !important;
+        position: relative; right: -1em !important
+    }
+    .cross {
+        width: 1.8em !important;
+        height: 1.8em !important;
+        position: absolute;
+        top: 5%; left: 3%;
+    }
+    .fixed-top {
+        position: fixed !important;
+        top: 0; right: 0; left: 0;
+        z-index: 1030 !important;
+    }
+    .fixed-top.scrolled{
+        background: rgba(0, 0, 0, 0.8);
+        transition: .5s linear;
+    }
+    .col-md-4{
+        margin-bottom: 2em;
+    }
+
+    /*Opening*/
+    #opening .jumbotron {
+        background-position: 50%;
+    }
+    #opening .jumbotron .introduction {
+        top: 30%;
+    }
+    #opening .jumbotron .introduction img{
+        width: 100% !important;
+    }
+
+    /*News*/
+    #news .row{
+        padding-left: 1.5em !important; 
+        padding-right: 1.5em !important;
+        padding-bottom: 2.5em !important;
+    }
+
+    /*Professional*/
+    #professional .row{
+        padding-left: 2.2em;
+        padding-right: 2.2em;
+    }
+
+    /*Services*/
+
+    /*Footer*/
+    footer .container{
+        padding-top: 4em;
+    }
+    footer .company-info{
+        padding-bottom: 5em; margin-top: 0em;
+    }
+    footer h2.copyright{
+        font-size: 14px;
+        letter-spacing: 1px; font-weight: 700; 
+        padding-top: 3em; padding-bottom: 2em;
+    }
+    footer h2.contact-us{
+        opacity: 0; visibility: hidden;
+    }
+    footer .top-button{
+        position: absolute; 
+        right: 1.5em; bottom: 14em; 
+    }
+    footer .top-button img{
+        width: 60px;
+    }
+
+    /*Carousel */
+    .flexslider{
+        margin-bottom: 0em !important;
+    }
+    .flexslider-container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .flexslider .slides img {
+        width: 70% !important;
+        padding: 0 1em;
+        display: block;
+    }
+    .flex-direction-nav .flex-prev {
+        opacity: 0; visibility: hidden;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 0; visibility: hidden;
+    }
+    .carousel li {
+        margin-right: -4.5em !important;
+    }
+
 }
-.flex-direction-nav .flex-next {
-    right: -120px !important;
-    text-align: right;
+
+@media only screen and (max-width:1400px) {
+    #professional .jumbotron article p{
+        color: #636262; 
+        line-height: 2;
+        font-size: 20px;
+    }
+    #professional .jumbotron article p {
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (min-width:901px) {
+    .flex-direction-nav .flex-prev {
+        left: -120px !important;
+    }
+    .flex-direction-nav .flex-next {
+        right: -120px !important;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width:1000px) and (max-height:1000px) {
+    #professional {
+        height: 200vh !important;
+    }
+    #professional .jumbotron {
+        background-position: 76%;
+        height: 200vh;
+    }
+    footer{
+        height: 100vh;
+    }
 }
