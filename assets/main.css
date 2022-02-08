@@ -203,13 +203,13 @@ img.logo:hover{
 
 /*Professional*/
 #professional{
-    height: 90vh !important;
+    height: 100vh !important;
 }
 #professional .jumbotron{
     background: url(../images/modern-workplace.jpg);
     background-size: cover;
     background-position: 100%;
-    width: 100%; height: 90vh; 
+    width: 100%; height: 100vh; 
 }
 #professional .jumbotron h2{
     color: #000; 
