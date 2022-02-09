@@ -16,11 +16,12 @@ span.noto-sans-tc{
 }
 
 /*Common Selectors*/
-
+header{
+    width: 100%;
+}
 section{
     width: 100%; 
     position: relative;
-    z-index: 2;
 }
 section .container{
     padding-top: 5em;
@@ -77,7 +78,7 @@ img.logo:hover{
 /*Navbar*/
 .collapse-content{
     background: rgba(165, 20, 18, 0.8);
-    padding: 1.5em; display: flex; 
+    padding: 1.5em; display: flex;
 }
 .navbar-nav {
     display: none; flex-direction: row;
@@ -89,9 +90,11 @@ img.logo:hover{
     padding-bottom: 2.5em !important;
 }
 .fixed-top {
-    position: absolute !important;
-    top: 0; right: 0; left: 0;
-    z-index: 1 !important;
+    z-index: 50 !important;
+}
+.fixed-top.scrolled{
+    background: rgba(0, 0, 0, 0.8);
+    transition: .5s linear;
 }
 .navbar > .container-fluid{
     width: 80%; margin-top: 3em;
@@ -120,7 +123,7 @@ img.logo:hover{
     position: absolute; top: 9.4%; right: 10.75%;
 }
 .mouse{
-    bottom: 20%;
+    bottom: 8%;
     /*Outside - Center Alignment*/
     position: absolute; left: 0; right: 0;
     margin-left: auto; margin-right: auto;
@@ -145,19 +148,17 @@ img.logo:hover{
 
 /*Opening*/
 #opening{
-    height: 120vh !important;
-    z-index: 0;
+    height: 105vh;
 }
 #opening .jumbotron{
     background: url(../images/homepage-banner.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50%;
-    width: 100%; height: 120vh; 
-    position: absolute; color: #FFF;
+    width: 100%; height: 105vh;
+    color: #FFF
 }
 #opening .jumbotron .introduction{
-    top: 22%; width: 80%;
+    top: 30%; width: 80%;
     /*Center Alignment*/
     position: absolute; left: 0; right: 0;
     margin-left: auto; margin-right: auto;
@@ -186,9 +187,6 @@ img.logo:hover{
 }
 
 /*News*/
-#news{
-    background: #FCFCFC;
-}
 #news .container .introduction{
     padding-bottom: .5em;
 }
@@ -202,14 +200,11 @@ img.logo:hover{
 }
 
 /*Professional*/
-#professional{
-    height: 100vh !important;
-}
 #professional .jumbotron{
     background: url(../images/modern-workplace.jpg);
     background-size: cover;
-    background-position: 100%;
-    width: 100%; height: 100vh; 
+    background-position: 80%;
+    width: 100%; padding-bottom: 5em;
 }
 #professional .jumbotron h2{
     color: #000; 
@@ -220,21 +215,14 @@ img.logo:hover{
     margin-top: 3em;
 }
 
-/*Services*/
-#services{
-    background: #FCFCFC;
-    margin-top: -2px;
-}
-
 /*Our Clients*/
 footer{
-    width: 100%; height: 100vh;
-    position: relative;
+    width: 100%; 
     background: #000;
-    z-index: 1031;
+    position: relative;
 }
 footer .container{
-    padding-top: 4em;
+    padding-top: 4em; padding-bottom: 2em;
 }
 footer .container h2{
     color: #FFF; font-size: 30px;
@@ -256,7 +244,7 @@ footer h2.copyright{
     color: #DD3835; font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px; font-weight: 400; 
-    padding-bottom: 2.5em;
+    padding-top: 1.5em;
 }
 footer .top-button{
     position: absolute; right: -1.5em;
@@ -280,6 +268,9 @@ footer .top-button{
     width: 100%; padding: 0 1em;
     display: block;
 }
+.flex-control-nav {
+    display: none !important;
+}
 .flex-direction-nav a{
     text-decoration: none; display: block;
     width: 40px; height: 40px;
@@ -293,7 +284,6 @@ footer .top-button{
     color: #FFF !important;
     text-shadow: none !important;
 }
-
 @media only screen and (max-width: 900px) {
 
     @keyframes loop{
@@ -337,23 +327,14 @@ footer .top-button{
         position: absolute;
         top: 5%; left: 3%;
     }
-    .fixed-top {
-        position: fixed !important;
-        top: 0; right: 0; left: 0;
-        z-index: 1030 !important;
-    }
-    .fixed-top.scrolled{
-        background: rgba(0, 0, 0, 0.8);
-        transition: .5s linear;
-    }
     .col-md-4{
         margin-bottom: 2em;
     }
+    section .container h2{
+        font-size: 22px;
+    }
 
     /*Opening*/
-    #opening .jumbotron {
-        background-position: 50%;
-    }
     #opening .jumbotron .introduction {
         top: 30%;
     }
@@ -363,8 +344,8 @@ footer .top-button{
 
     /*News*/
     #news .row{
-        padding-left: 1.5em !important; 
-        padding-right: 1.5em !important;
+        padding-left: 1em !important; 
+        padding-right: 1em !important;
         padding-bottom: 2.5em !important;
     }
 
@@ -377,11 +358,8 @@ footer .top-button{
     /*Services*/
 
     /*Footer*/
-    footer .container{
-        padding-top: 4em;
-    }
     footer .company-info{
-        padding-bottom: 5em; margin-top: 0em;
+        margin-top: 0em;
     }
     footer h2.copyright{
         font-size: 14px;
@@ -392,8 +370,7 @@ footer .top-button{
         opacity: 0; visibility: hidden;
     }
     footer .top-button{
-        position: absolute; 
-        right: 1.5em; bottom: 14em; 
+        right: 1.5em; 
     }
     footer .top-button img{
         width: 60px;
@@ -437,23 +414,10 @@ footer .top-button{
 
 @media only screen and (min-width:901px) {
     .flex-direction-nav .flex-prev {
-        left: -120px !important;
+        left: -100px !important;
     }
     .flex-direction-nav .flex-next {
-        right: -120px !important;
+        right: -100px !important;
         text-align: right;
-    }
-}
-
-@media only screen and (max-width:1000px) and (max-height:1000px) {
-    #professional {
-        height: 200vh !important;
-    }
-    #professional .jumbotron {
-        background-position: 76%;
-        height: 200vh;
-    }
-    footer{
-        height: 100vh;
     }
 }
