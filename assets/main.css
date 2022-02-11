@@ -14,6 +14,25 @@ a{
 span.noto-sans-tc{
     font-family: "Noto Sans TC", sans-serif !important;
 }
+span.montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+span.long-words{
+    font-size: 20px !important;
+}
+i{
+    font-size: 25px;
+}
+ol, ul {
+    padding-left: 0 !important;
+}
+select{
+    outline: none; border: none;
+    box-shadow: none; cursor: pointer;
+}
+option{
+    cursor: pointer !important;
+}
 
 /*Common Selectors*/
 header{
@@ -148,14 +167,14 @@ img.logo:hover{
 
 /*Opening*/
 #opening{
-    height: 105vh;
+    height: 100.18vh;
 }
 #opening .jumbotron{
     background: url(../images/homepage-banner.jpg);
     background-size: cover;
     background-position: 50%;
-    width: 100%; height: 105vh;
-    color: #FFF
+    width: 100%; height: 100.18vh;
+    color: #FFF;
 }
 #opening .jumbotron .introduction{
     top: 30%; width: 80%;

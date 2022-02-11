@@ -1,0 +1,274 @@
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    width: 120px; height: 100%; 
+    position: fixed; text-align: center; 
+    background: #FFF; z-index: 50; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} 
+.wrapper .sidebar .logo{
+    width: 50px; position: static;
+}
+.wrapper ul{
+    margin-bottom: 0 !important;
+}
+.wrapper .sidebar ul li{
+    padding: 35px 0; list-style: none;
+    cursor: pointer;
+}  
+.wrapper .sidebar span{
+    color: #BBBBBB; 
+    display: none;
+}
+.wrapper .sidebar .words h2{
+    font-size: 20px !important;
+}
+.wrapper .sidebar .bottom-area{
+    /*Alignment*/
+    position: absolute; 
+    left: 0; right: 0; bottom: 0;
+    margin-left: auto; margin-right: auto;
+}
+.wrapper .sidebar .bottom-area .user-area{
+    background: #EAEAEA; padding: 2em 0;
+    cursor: pointer;
+}
+.wrapper .sidebar ul li:hover,
+.wrapper .sidebar .bottom-area .user-area:hover{
+    background: rgba(39, 39, 39, 1);
+    transition: 0.5s ease all;
+}
+.wrapper .sidebar ul li:nth-child(1):hover{
+    background: #FFF; transition: none;
+}
+
+@media (max-height:740px) {
+    .bottom-area ul{
+        display: none;
+    }
+}
+
+/*Page Contents*/
+.wrapper main{
+    width: 100%; 
+    margin-left: 175px;
+    margin-right: 50px;
+}
+.wrapper section{
+    padding-top: 2em; padding-bottom: 1em;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+/*Sections*/
+#personal-information{
+    margin-top: 2em;
+}
+
+/*Form Style - Common Elements*/
+form h2{
+    font-size: 25px; 
+    letter-spacing: 3px; 
+}
+form span{
+    font-size: 25px; 
+}
+input{
+    background: #EAEAEA !important; color: #979797;
+    display: inline-block; width: 630px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px; padding: 0.75em 1em;
+}
+input, button{
+    outline: none; border: none;
+}
+input:focus, button:focus{
+    outline: none; border: none;
+}
+input::-webkit-input-placeholder{
+    font-size: 25px; color: #717274;
+    letter-spacing: 5px; 
+}
+input[type]{
+    letter-spacing: 4px; 
+    font-size: 20px;
+    color: #717274 !important;
+    border-bottom: 2px solid #D0D0D0;
+}
+button.edit{
+    background: #FCFCFC;
+    width: 125px; padding: 0.6em 0;
+    outline: none; border: none; border-radius: 30px;
+    font-size: 20px; color: #B62122;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*Alignment*/
+    position: absolute; right: 2em;
+}
+button.edit p{
+    margin-bottom: 0 !important;
+}
+button.edit:hover{
+    transition: all .5s ease;
+    background:	#FFF7FF;
+}
+
+/*Toggle Buttons*/
+.switch{
+    position: relative; display: inline-block;
+    width: 55px; height: 25px;
+}
+.switch input { 
+    opacity: 0; width: 0; height: 0;
+}
+.slider {
+    position: absolute; cursor: pointer;
+    top: 0; left: 0; right: 0;
+    bottom: 0; border-radius: 30px; 
+    background: rgba(120, 120, 128, .5);
+    box-shadow: rgba(0, 0, 0, 0.5) 2.4px 2.4px 6px;
+    transition: .4s ease all;
+}
+.slider:before {
+    position: absolute; content: "";
+    top: -1px; left: -2px;
+    height: 27px; width: 27px;
+    background: #FCFCFC; 
+    box-shadow: rgba(0, 0, 0, 0.9) 0.5px 2px 8px;
+    border-radius: 50%;
+    transition: .4s ease all;
+}
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/*Form Style - Section One*/
+form.personal-information-area{
+    width: 1130px;
+}
+form .personal-information,
+form .personal-information-2{
+    display: flex; flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+form .personal-information > div input{
+    width: 230px;
+}
+form .personal-information-2 > div:nth-child(1) input{
+    width: 590px !important;
+}
+form .personal-information-2 > div:nth-child(2) input{
+    width: 250px !important;
+}
+form .personal-information, 
+form .personal-information-2{
+    margin: 4em 0; margin-left: 1.5em; 
+} 
+
+/*Form Style - Section Two*/
+#software-area h2{
+    font-size: 25px;
+}
+form.selection{
+    margin: 2em 0; width: 1200px;
+}
+.select-box{
+    width: 400px !important;
+    margin: 1.5em 0;
+}
+.selected{
+    background: #EAEAEA; color: #717274;
+    border-radius: 8px; width: 250px; order: 0;
+    font-size: 22.5px !important; 
+    /*Word Alignment*/
+    display: flex; align-items: center;
+    justify-content: space-between;
+}
+.selected h2{
+    margin-bottom: 0.1em !important;
+    font-size: 22.5px !important;
+}
+.select-box .options-container {
+    background: #EAEAEA; color: #717274;
+    max-height: 0; opacity: 0; width: 250px;
+    transition: 0.4s ease-in all;
+    font-size: 22.5px; border-radius: 8px; 
+    overflow-y: hidden; order: 1;
+    position: absolute; z-index: 100;
+}
+.select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    margin-top: 3em;
+}
+.select-box .option{
+    letter-spacing: 1.5px;
+}
+.select-box .option, .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+} 
+.select-box label {
+    cursor: pointer;
+}
+.select-box .option .radio {
+    display: none;
+}
+  
+/*Form Style - Section Three*/
+form.reset-information-area{
+    width: 1162px; 
+}
+form.reset-information-area input{
+    width: 630px;
+}
+form.reset-information-area input[type]{
+    letter-spacing: 4px; 
+    font-size: 20px;
+    color: #000 !important;
+}
+form.reset-information-area .reset-information .row{
+    margin: 2em 0 !important;
+}
+form.reset-information-area .reset-information .row .col-md-2{
+    display: flex;  
+    justify-content: end;
+    align-items: center;
+}
+span .toggle{
+    position: relative; 
+    left: -50px; top: 1.5px;
+    color: #BBBBBB; cursor: pointer;
+}
+
+/*Form Style - Section Four*/
+#line{
+    border-bottom: none !important;
+    padding-bottom: 4em;
+}
+#line input:checked + .slider {
+    background: #11C00E;
+}
+#line .switch{
+    position: relative; display: inline-block;
+    float: right;
+}
+#line .line-account-correction{
+    margin-left: 5em; margin-top: 1.5em;
+}
+#line .line-account-correction-methods{
+    width: 750px;
+}
+#line h2{
+    letter-spacing: 3px; font-size: 25px;
+    padding-bottom: 1em;
+}
+#line h3{
+    color: #717274; font-size: 20px;
+}
+#line ol{
+    padding-left: 1.15em !important;
+    color: #717274; font-size: 20px;
+    letter-spacing: 1px;
+}
