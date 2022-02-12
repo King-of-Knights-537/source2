@@ -1,6 +1,15 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -20,6 +29,9 @@ span.montserrat{
 span.long-words{
     font-size: 20px !important;
 }
+span.red{
+    color: #B62122 !important;
+}
 i{
     font-size: 25px;
 }
@@ -32,6 +44,10 @@ select{
 }
 option{
     cursor: pointer !important;
+}
+button p{
+    text-align: center !important;
+    margin-bottom: 0.1em;
 }
 
 /*Common Selectors*/

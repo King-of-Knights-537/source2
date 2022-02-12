@@ -13,6 +13,11 @@ $(document).ready(function() {
     $(".close").click(function(){
         $(".open").show();
     });
+
+    //Alert loader
+    $(".buttons button").click(function(){
+        $(".loader").hide();
+    });
  
     //Carousel 
     $('.flexslider').flexslider({
@@ -28,7 +33,6 @@ $(document).ready(function() {
     });
 
 });
-
 
 
   

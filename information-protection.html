@@ -34,12 +34,86 @@
     body{
       font-family: "Noto Sans TC", sans-serif;
     }
+    .loader{
+      position: fixed; z-index: 100;
+      background: rgba(0, 0, 0, .38);
+      width: 100%; height: 100%; 
+      /*Alignment*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .alert-minder{
+      width: 650px; height: 540px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 1em 3.5em;
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-around;
+    }
+    .alert-minder h2{
+      font-weight: 600; font-size: 30px;
+      letter-spacing: 1px; text-align: center;
+      margin-top: 2em;
+    }
+    .alert-minder p{
+      font-weight: normal; font-size: 25px;
+      line-height: 142.4%; letter-spacing: 1px;
+      color: #717274; text-align: left;
+    }
+    .instruction{
+      margin: 5em 0;
+    }
+    button.next-time{
+      width: 200px; padding: 0.55em 0;
+      background: #FFF; border-radius: 35px; 
+      font-size: 23px; border: 1px solid #717274;
+    }
+    button.lets-do-it{
+      width: 200px; padding: 0.55em 0; 
+      background: rgba(0, 0, 0, 0.51);
+      border-radius: 35px; font-size: 23px;
+    }
+    button.next-time p{
+      color:#717274 !important;
+      letter-spacing: 2.5px;
+    }
+    button.lets-do-it p{
+      color: #FFF !important;
+      letter-spacing: 2.5px;
+    }
 
   </style>
 
 </head>
 
 <body>
+
+    <div class="loader">
+
+      <div class="alert-minder">
+
+        <h2>首次登入建議綁定 <span class="montserrat">Line</span> 機器人</h2>
+
+        <div class="instruction">
+
+          <p>綁定<span class="montserrat">LINE</span>通知可隨時掌握動態，案件有任何更動將會動態推播，讓您不漏任何一則訊息！請點擊按鈕進行訂閱</p>
+
+        </div>
+
+        <div class="buttons">
+
+          <button class="next-time"><p>下次再說</p></button>
+
+          <button class="lets-do-it"><p>前往綁定</p></button>
+
+        </div>
+
+      </div>
+
+    </div>  
 
     <main>
 
@@ -48,46 +122,46 @@
             <div class="sidebar" id="">
 
                 <div class="top-area">
-
+                  
                     <ul>
                         <li>
                             <a href="index.html">
-                                <img src="./images/logo.png" alt="Logo" class="logo">
+                              <img src="./images/logo.png" alt="Logo" class="logo">
                             </a>
                         </li>
                         <li>
                             <a href="#">
 
-                                <img src="./images/pencil-vector.png" alt="Pencil-Vector">
+                              <img src="./images/pencil-vector.png" alt="Pencil-Vector">
 
-                                <span>設計規範</span>
+                              <span class="red">設計規範</span>
                     
                             </a>
                         </li>
                         <li>
                             <a href="#">
 
-                                <img src="./images/list-vector.png" alt="List-Vector">
+                              <img src="./images/list-vector.png" alt="List-Vector">
 
-                                <span>專案列表</span>
+                              <span>專案列表</span>
                     
                             </a>
                         </li>
                         <li>
                             <a href="#">
 
-                                <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
+                              <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
 
-                                <span>聯絡我們</span>
+                              <span>聯絡我們</span>
 
                             </a>
                         </li>
                         <li>
                             <a href="">
 
-                                <img src="./images/chat-vector.png" alt="Chat-Vector">
+                              <img src="./images/chat-vector.png" alt="Chat-Vector">
 
-                                <span>詢問表單</span>
+                              <span>詢問表單</span>
 
                             </a>
                         </li>
@@ -101,9 +175,9 @@
                         <li>
                             <a href="#">
 
-                                <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+                              <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
 
-                                <span>通知中心</span>
+                              <span class="red">通知中心</span>
 
                             </a>
                         </li>
@@ -113,11 +187,17 @@
             
                         <a href="">
 
-                            <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+                          <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
 
-                            <span>陳小明 登出</span>
+                          <div class="user">
+
+                            <span>陳小明</span>
+                            
+                            <a href="">登出</a>
 
                             <span>abc123@gmail.com</span>
+
+                          </div>
 
                         </a>
     
@@ -470,6 +550,8 @@
         </div>
 
         <!--External JS-->
+        <script src="./assets/app.js"></script>
+
         <script src="./assets/forms.js"></script>
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

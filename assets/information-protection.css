@@ -1,13 +1,19 @@
 .wrapper{
     display: flex;
-    position: relative;
 }
 .wrapper .sidebar{
     width: 120px; height: 100%; 
     position: fixed; text-align: center; 
     background: #FFF; z-index: 50; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .7s ease;
 } 
+.wrapper .sidebar img{
+    cursor: pointer;
+}
+.wrapper .sidebar:hover{
+    width: 270px; text-align: left;
+}
 .wrapper .sidebar .logo{
     width: 50px; position: static;
 }
@@ -16,14 +22,22 @@
 }
 .wrapper .sidebar ul li{
     padding: 35px 0; list-style: none;
-    cursor: pointer;
 }  
+.wrapper .sidebar:hover ul li{
+    padding-left: 3em;
+}
 .wrapper .sidebar span{
-    color: #BBBBBB; 
+    color: #ADADAD; font-size: 20px; 
+    letter-spacing: 1px;
     display: none;
 }
-.wrapper .sidebar .words h2{
-    font-size: 20px !important;
+.wrapper .sidebar:hover ul li span{
+    float: right; margin-right: 3em;
+    animation: fadeIn 2.5s;
+} 
+.wrapper .sidebar:hover span{
+    display: inline;
+    cursor: auto;
 }
 .wrapper .sidebar .bottom-area{
     /*Alignment*/
@@ -33,15 +47,22 @@
 }
 .wrapper .sidebar .bottom-area .user-area{
     background: #EAEAEA; padding: 2em 0;
-    cursor: pointer;
+    cursor: pointer; 
 }
-.wrapper .sidebar ul li:hover,
-.wrapper .sidebar .bottom-area .user-area:hover{
-    background: rgba(39, 39, 39, 1);
-    transition: 0.5s ease all;
+.wrapper .sidebar:hover .user-area{
+    padding-left: 1.5em;
 }
-.wrapper .sidebar ul li:nth-child(1):hover{
-    background: #FFF; transition: none;
+.wrapper .sidebar .bottom-area .user-area .user{
+    display: none;
+    animation: fadeIn 2s;
+}
+.wrapper .sidebar:hover .bottom-area .user-area .user{
+    display: inline;
+}
+.wrapper .sidebar .bottom-area .user-area .user a{
+    font-size: 20px; 
+    color: #B62122 !important;
+    margin-left: 1em;
 }
 
 @media (max-height:740px) {
@@ -251,7 +272,7 @@ span .toggle{
     background: #11C00E;
 }
 #line .switch{
-    position: relative; display: inline-block;
+    position: relative;
     float: right;
 }
 #line .line-account-correction{
