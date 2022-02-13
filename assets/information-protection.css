@@ -1,86 +1,4 @@
-.wrapper{
-    display: flex;
-}
-.wrapper .sidebar{
-    width: 120px; height: 100%; 
-    position: fixed; text-align: center; 
-    background: #FFF; z-index: 50; 
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: all .7s ease;
-} 
-.wrapper .sidebar img{
-    cursor: pointer;
-}
-.wrapper .sidebar:hover{
-    width: 270px; text-align: left;
-}
-.wrapper .sidebar .logo{
-    width: 50px; position: static;
-}
-.wrapper ul{
-    margin-bottom: 0 !important;
-}
-.wrapper .sidebar ul li{
-    padding: 35px 0; list-style: none;
-}  
-.wrapper .sidebar:hover ul li{
-    padding-left: 3em;
-}
-.wrapper .sidebar span{
-    color: #ADADAD; font-size: 20px; 
-    letter-spacing: 1px;
-    display: none;
-}
-.wrapper .sidebar:hover ul li span{
-    float: right; margin-right: 3em;
-    animation: fadeIn 2.5s;
-} 
-.wrapper .sidebar:hover span{
-    display: inline;
-    cursor: auto;
-}
-.wrapper .sidebar .bottom-area{
-    /*Alignment*/
-    position: absolute; 
-    left: 0; right: 0; bottom: 0;
-    margin-left: auto; margin-right: auto;
-}
-.wrapper .sidebar .bottom-area .user-area{
-    background: #EAEAEA; padding: 2em 0;
-    cursor: pointer; 
-}
-.wrapper .sidebar:hover .user-area{
-    padding-left: 1.5em;
-}
-.wrapper .sidebar .bottom-area .user-area .user{
-    display: none;
-    animation: fadeIn 2s;
-}
-.wrapper .sidebar:hover .bottom-area .user-area .user{
-    display: inline;
-}
-.wrapper .sidebar .bottom-area .user-area .user a{
-    font-size: 20px; 
-    color: #B62122 !important;
-    margin-left: 1em;
-}
-
-@media (max-height:740px) {
-    .bottom-area ul{
-        display: none;
-    }
-}
-
 /*Page Contents*/
-.wrapper main{
-    width: 100%; 
-    margin-left: 175px;
-    margin-right: 50px;
-}
-.wrapper section{
-    padding-top: 2em; padding-bottom: 1em;
-    border-bottom: 2px solid #D0D0D0;
-}
 
 /*Sections*/
 #personal-information{
@@ -164,8 +82,11 @@ input:checked + .slider:before {
 }
 
 /*Form Style - Section One*/
+#personal-information{
+    width: 1600px;
+}
 form.personal-information-area{
-    width: 1130px;
+    width: 1200px;
 }
 form .personal-information,
 form .personal-information-2{
@@ -192,7 +113,7 @@ form .personal-information-2{
     font-size: 25px;
 }
 form.selection{
-    margin: 2em 0; width: 1200px;
+    margin: 2.25em 0; 
 }
 .select-box{
     width: 400px !important;
@@ -239,7 +160,7 @@ form.selection{
   
 /*Form Style - Section Three*/
 form.reset-information-area{
-    width: 1162px; 
+    padding-bottom: 1em;
 }
 form.reset-information-area input{
     width: 630px;
@@ -250,7 +171,7 @@ form.reset-information-area input[type]{
     color: #000 !important;
 }
 form.reset-information-area .reset-information .row{
-    margin: 2em 0 !important;
+    margin: 3.5em 0 !important;
 }
 form.reset-information-area .reset-information .row .col-md-2{
     display: flex;  
@@ -276,10 +197,10 @@ span .toggle{
     float: right;
 }
 #line .line-account-correction{
-    margin-left: 5em; margin-top: 1.5em;
+    margin-left: 5em; margin-top: 4em;
 }
 #line .line-account-correction-methods{
-    width: 750px;
+    width: 700px;
 }
 #line h2{
     letter-spacing: 3px; font-size: 25px;

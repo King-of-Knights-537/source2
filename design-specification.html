@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS / Bootstrap-->
+  <link rel="stylesheet" href="./assets/main.css">
+
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--JS / jQuery--> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Source | 設計規範 - 設計規格</title>
+
+  <style>
+
+    body{
+      font-family: "Noto Sans TC", sans-serif;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <aside class="sidebar" id="">
+
+      <div class="top-area">
+        
+          <ul>
+              <li>
+                  <a href="index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo">
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/pencil-vector.png" alt="Pencil-Vector">
+
+                    <span class="red">設計規範</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/list-vector.png" alt="List-Vector">
+
+                    <span>專案列表</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
+
+                    <span>聯絡我們</span>
+
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+
+                    <img src="./images/chat-vector.png" alt="Chat-Vector">
+
+                    <span>詢問表單</span>
+
+                  </a>
+              </li>
+          </ul> 
+
+      </div>
+
+      <div class="bottom-area">
+
+          <ul>
+              <li>
+                  <a href="#">
+
+                    <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+
+                    <span class="red">通知中心</span>
+
+                  </a>
+              </li>
+          </ul>
+
+          <div class="user-area">
+  
+              <a href="">
+
+                <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+
+                <div class="user">
+
+                  <span>陳小明</span>
+                  
+                  <a href="">登出</a>
+
+                  <span class="montserrat">abc123@gmail.com</span>
+
+                </div>
+
+              </a>
+
+          </div>
+
+      </div>
+
+    </aside>
+
+    <main class="selectable-content">
+
+        <header>
+
+            <nav>
+    
+                <ul>
+                    <li> 
+                        <button class='btn-1 active'><p>網頁設計規範</p></button>
+                    </li>
+                    <li>
+                        <button class='btn-2'><p><span class="montserrat">App</span> 設計規範</p></button>
+                    </li>
+                    <li>
+                        <button class='btn-3'><p>軟體設計規範</p></button>
+                    </li>
+                    <li>
+                        <button class='btn-4'><p>軟體設計規範</p></button>
+                    </li>
+                </ul> 
+    
+            </nav>
+            
+        </header>
+
+        <section class='section-1 active'>
+
+            <nav>
+            
+                <ul>
+                    <li> 
+                        <h2 class='btn-1 active'>設計規格</h2>
+                    </li>
+                    <li>
+                        <h2 class='btn-2'>網頁<span class="montserrat">UIUX</span>參考</h2>
+                    </li>
+                    <li>
+                        <h2 class='btn-3'>細節注意事項</h2>
+                    </li>
+                    <li>
+                        <h2 class='btn-4'>給工程師的注意事項</h2>
+                    </li>
+                </ul> 
+
+            </nav>
+
+            <div class="content-1 active">
+
+                <main>
+
+                    <div class="instruction">
+
+                        <p class="text-start">免費圖庫：
+                            <a href=""><span class="montserrat">Unslpash</span></a>、
+                            <a href=""><span class="montserrat">Free icon</span></a>、
+                            <a href="">字型檔下載</a>
+                        </p>
+    
+                        <h2 class="red text-start">1. 設計稿規格</h2>
+    
+                        <ul class="circle text-start">
+                            <li>·色彩模式：<span class="montserrat">RGB</span></li>
+                            <li>·解析度：<span class="montserrat">72 dpi</span></li>
+                            <li>·單位：<span class="montserrat">px</span> (請盡量用網頁使用的單位 <span class="montserrat">px</span>，若用其他單位請對照 : 單位表)</li>
+                        </ul>
+    
+                        <article>
+    
+                            <div class="col-md-6 text-start">
+                                <h2 class="red">PC</h2>
+                                <p>a. 100% 檢視 <span class="red">(<span class="montserrat">Mac Retina</span> 用 <span class="montserrat">200%</span> 檢視)</span></p>
+                                <p>b. 寬度 <span class="montserrat">1920 px</span>、長度不限</p>
+                                <p>c. 滿版寬度 <span class="montserrat">1920px</span>、高度 <span class="montserrat">1080px</span></p>
+                                <p>d. 內容集中的最大寬度 <span class="montserrat">1280px</span></p>
+                                <p>e. 格線系統 <span class="montserrat">12</span> 等分，與邊界間距 <span class="montserrat">15px</span></p>
+                                <p>f. 滿版大圖尺寸 <span class="montserrat">1920x1080</span></p>
+                                <p>g. 桌機瀏覽器文字預設為 <span class="montserrat">16px (12pt)</span>，</p>
+                                <p>最小只能設定到 <span class="montserrat">12px (9pt)</span></p>
+                            </div>
+    
+                            <div class="col-md-6 text-start">
+    
+                                <h2 class="red">Mobile</h2>
+    
+                                <p>a. <span class="montserrat">50%</span> 檢視<span class="red"> (<span class="montserrat">Mac Retina</span> 用 <span class="montserrat">100%</span> 檢視)</span></p>
+                                <p>b. 寬度 <span class="montserrat">750 px</span>、⻑度不限</p>
+                                <p>c. 滿版寬度 <span class="montserrat">750px</span>、高度 <span class="montserrat">1334px</span></p>
+                                <p>d. 內容集中的最大寬度 <span class="montserrat">640px</span></p>
+                                <p>e. 格線系統 <span class="montserrat">12</span> 等分，與邊界間距 <span class="montserrat">15px</span></p>
+                                <p>f. 滿版大圖尺寸 <span class="montserrat">750x1334</span></p>
+                                <p>g. 文章內文  <span class="montserrat">≥ 14px (11pt)</span></p>
+    
+                                <p class="red">(<span class="montserrat">Mac Retina</span> 文字大小請乘兩倍)</p>
+                            </div>
+    
+                        </article>
+
+                    </div>
+
+                    <p class="statement">※ 為保持圖片清晰，設計時需做兩倍大；檢視的百分比很重要，一般來說 <span class="montserrat">100%</span> 預覽是人眼實際觀看網頁的正確比例 !</p>
+
+                    <img class="big-image" src="./images/tutorial-graphic-1.png" alt="">
+
+                    <div class="center-contents">
+
+                        <article>
+
+                            <p class="statement">· 本範例暫時使用 <a href="">Bootstrap 3.0 Grids PSD</a>，請照此概念修改設定並自製屬於自己方便操作的格線樣板</p>
+
+                            <p class="statement">· 其他 <span class="montserrat">grid system</span> 參考：<a href="">連結</a></p>
+
+                            <p class="statement red">· 內容集中的最大寬度視情況而定，一般桌機抓 <span class="montserrat">13</span> 吋筆電<span class="montserrat">(1366x768)</span>瀏覽時最舒服的寬度。</p>
+
+                        </article>
+
+                    </div>
+
+                    <div class="instruction">
+    
+                        <article class="article-2">
+    
+                            <div class="col-md-5 text-start">
+
+                                <p>· 手機版當文字內容做滿版時，需排在 <span class="montserrat">640x1136px</span> 裡面，因為要確保在最小寬度 <span class="montserrat">320px</span> 手機上 正確顯示，除非特殊情況，希望每個裝置大小都處於這樣的文字排版縮放，可能會需要使用特殊設定，請與前端討論。</p>
+
+                            </div>
+    
+                            <div class="col-md-7 text-center">
+    
+                                <img src="./images/tutorial-graphic-2.png" alt="">
+
+                            </div>
+    
+                        </article>
+
+                        <h2 class="red text-start">2. 滿版大圖做兩張</h2>
+
+                        <h3 class="red text-start">· 滿版大圖分開 - 做兩張</h3>
+
+                        <article>
+    
+                            <div class="col-md-4 text-start">
+
+                                <h4>桌機 <span class="montserrat bold">1920x1080 px</span></h4>
+
+                                <img src="./images/tutorial-graphic-3.png" alt="">
+
+                            </div>
+    
+                            <div class="col-md-5 text-start">
+    
+                                <h4>手機 <span class="montserrat bold">750x1334 px</span></h4>
+
+                                <img src="./images/tutorial-graphic-4.png" alt="">
+
+                                <p>範例網站 : <a href="https://www.persol-career.co.jp/" target="_blank">https://www.persol-career.co.jp/</a></p>
+
+                            </div>
+    
+                        </article>
+
+                        <h3 class="red text-start">· 滿版大圖沿用同一張</h3>
+
+                        <h4 class="text-start">桌機 <span class="montserrat">1920x1080 px</span>，<span class="grey">直接等比例縮小 (若主要圖案不在中央，需由前端移動重點位置)</span></h4>
+
+                        <article>
+    
+                            <div class="col-md-4 text-start">
+
+                                <img src="./images/tutorial-graphic-5.png" alt="">
+
+                            </div>
+    
+                            <div class="col-md-5 text-start">
+
+                                <img src="./images/tutorial-graphic-6.png" alt="">
+
+                                <p>範例網站 : <a href="https://memory.dji.com/" target="_blank">https://memory.dji.com/</a></p>
+
+                            </div>
+    
+                        </article>
+
+                        <h2 class="red text-start">3. 3D 全景圖</h2>
+
+                        <div class="col-md-10 text-start">
+
+                            <h3><span class="grey"><span class="montserrat">360°</span> 的圖片尺寸比較特殊，寬高需使用 <span class="montserrat">2</span> 的次方，基本上依據前端判斷效能壓縮圖片，逐序遞增或遞減: <span class="montserrat">4098x2048、2048x1024、1024x512、512x256 ... </span>至少給<span class="montserrat"> 2048 x 1024 px </span></h3>
+
+                        </div>
+
+                        <div class="center-contents">
+
+                            <article>
+    
+                                <img class="big-image" src="./images/tutorial-graphic-7.png" alt="">
+
+                                <p>範例網站 : <a href="http://www.campoviejo.com/360/en/home" target="_blank">http://www.campoviejo.com/360/en/home</a></p>
+    
+                            </article>
+    
+                        </div>
+
+                    </div>
+
+                </main>
+
+            </div>
+
+            <div class="content-2">
+
+            </div>
+
+            <div class="content-3">O</div>
+
+            <div class="content-4">N</div>
+
+        </section>
+
+        <section class='section-2'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
+
+        <section class='section-3'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
+
+        <section class='section-4'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
+
+    </main>
+
+    <!--External JS-->
+    <script src="./assets/app.js"></script>
+
+    <script src="./assets/forms.js"></script>
+
+    <script src="./assets/page-selectable-contents.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

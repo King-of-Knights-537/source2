@@ -42,6 +42,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      top: 0;
     }
     .alert-minder{
       width: 650px; height: 540px;
@@ -84,6 +85,11 @@
       color: #FFF !important;
       letter-spacing: 2.5px;
     }
+    section{
+      width: 1600px; 
+      margin-left: 180px; margin-bottom: 2.25em;
+      border-bottom: 2px solid #ADADAD;
+    }
 
   </style>
 
@@ -115,449 +121,437 @@
 
     </div>  
 
-    <main>
+    <aside class="sidebar" id="">
 
-        <div class="wrapper">
+      <div class="top-area">
+        
+          <ul>
+              <li>
+                  <a href="index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo">
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
 
-            <div class="sidebar" id="">
+                    <img src="./images/pencil-vector.png" alt="Pencil-Vector">
 
-                <div class="top-area">
+                    <span class="red">設計規範</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/list-vector.png" alt="List-Vector">
+
+                    <span>專案列表</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
+
+                    <span>聯絡我們</span>
+
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+
+                    <img src="./images/chat-vector.png" alt="Chat-Vector">
+
+                    <span>詢問表單</span>
+
+                  </a>
+              </li>
+          </ul> 
+
+      </div>
+
+      <div class="bottom-area">
+
+          <ul>
+              <li>
+                  <a href="#">
+
+                    <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+
+                    <span class="red">通知中心</span>
+
+                  </a>
+              </li>
+          </ul>
+
+          <div class="user-area">
+  
+              <a href="">
+
+                <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+
+                <div class="user">
+
+                  <span>陳小明</span>
                   
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                              <img src="./images/logo.png" alt="Logo" class="logo">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                  <a href="">登出</a>
 
-                              <img src="./images/pencil-vector.png" alt="Pencil-Vector">
-
-                              <span class="red">設計規範</span>
-                    
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-
-                              <img src="./images/list-vector.png" alt="List-Vector">
-
-                              <span>專案列表</span>
-                    
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-
-                              <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
-
-                              <span>聯絡我們</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-
-                              <img src="./images/chat-vector.png" alt="Chat-Vector">
-
-                              <span>詢問表單</span>
-
-                            </a>
-                        </li>
-                    </ul> 
+                  <span>abc123@gmail.com</span>
 
                 </div>
 
-                <div class="bottom-area">
+              </a>
 
-                    <ul>
-                        <li>
-                            <a href="#">
+          </div>
 
-                              <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+      </div>
 
-                              <span class="red">通知中心</span>
+    </aside>
 
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <div class="user-area">
-            
-                        <a href="">
+    <section id="personal-information">
 
-                          <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+      <button class="edit"><p>編輯</p></button>
 
-                          <div class="user">
+      <form class="personal-information-area" action="">
 
-                            <span>陳小明</span>
-                            
-                            <a href="">登出</a>
+          <div class="personal-information">
 
-                            <span>abc123@gmail.com</span>
+              <div>
+                  <span>姓名：</span>
+                  <input type="name" class="section-one">
+              </div>
 
-                          </div>
+              <div>
+                  <span>電話：</span>
+                  <input type="phone" class="section-one">
+              </div>
 
-                        </a>
-    
-                    </div>
+              <div>
+                  <span>身分證字號：</span>
+                  <input type="id" class="section-one">
+              </div>
 
+          </div>
+
+          <div class="personal-information-2">
+
+              <div>
+                  <span>地址：</span>
+                  <input type="address">
+              </div>
+
+              <div>
+                  <span class="montserrat">e-mail：</span>
+                  <input type="email">
+              </div>
+
+          </div>
+
+      </form>
+
+    </section>
+
+    <section id="software-area">
+
+      <button class="edit"><p>編輯</p></button>
+
+      <h2>使用軟體類型</h2>
+
+      <form class="selection" action="">
+
+          <div class="row">
+        
+              <div class="select-box">
+
+                <div class="options-container">
+
+                  <div class="option">
+
+                    <input type="radio" class="radio" 
+                     id="automobiles" name="category">
+
+                    <label><span class="montserrat">Figma</span></label>
+
+                  </div>
+        
+                  <div class="option">
+
+                    <input type="radio" class="radio" 
+                     id="adobeIllustrator" name="category" />
+
+                    <label><span class="montserrat long-words">Adobe illustrator</span></label>
+
+                  </div>
+        
+                  <div class="option">
+
+                    <input type="radio" class="radio" 
+                     id="adobeXD" name="category" />
+
+                    <label><span class="montserrat">Adobe XD</span></label>
+
+                  </div>
+        
+                  <div class="option">
+                      
+                    <input type="radio" class="radio" 
+                     id="sketch" name="category" />
+
+                    <label><span class="montserrat">Sketch</span></label>
+
+                  </div>
+        
+                </div>
+        
+                <div class="selected">
+                  <h2>介面製圖</h2>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+        
+                <!--Bug Code, Don't need to mind, It can't be erased-->
+                <div class="search-box" style="display:none">
+                  <input type="text" placeholder="Start Typing..." />
                 </div>
 
-            </div>
+              </div>
+        
+              <div class="select-box">
 
-            <main>
+                <div class="options-container">
 
-                <section id="personal-information">
+                  <div class="option">
 
-                    <button class="edit"><p>編輯</p></button>
+                    <input type="radio" class="radio" 
+                     id="excellent" name="category">
 
-                    <form class="personal-information-area" action="">
+                    <label>精通</label>
 
-                        <div class="personal-information">
+                  </div>
+        
+                  <div class="option">
 
-                            <div>
-                                <span>姓名：</span>
-                                <input type="name" class="section-one">
-                            </div>
-    
-                            <div>
-                                <span>電話：</span>
-                                <input type="phone" class="section-one">
-                            </div>
+                    <input type="radio" class="radio" 
+                     id="okay" name="category">
 
-                            <div>
-                                <span>身分證字號：</span>
-                                <input type="id" class="section-one">
-                            </div>
+                    <label for="film">尚可</label>
 
-                        </div>
+                  </div>
 
-                        <div class="personal-information-2">
+                </div>
+        
+                <div class="selected">
+                  <h2>精通</h2>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+        
+                <!--Bug Code, Don't need to mind, It can't be erased-->
+                <div class="search-box" style="display:none"> 
+                  <input type="text" placeholder="Start Typing..." />
+                </div>
 
-                            <div>
-                                <span>地址：</span>
-                                <input type="address">
-                            </div>
-    
-                            <div>
-                                <span class="montserrat">e-mail：</span>
-                                <input type="email">
-                            </div>
+              </div>
 
-                        </div>
+          </div>
 
-                    </form>
+          <div class="row">
+              
+              <div class="select-box">
 
-                </section>
+                  <div class="options-container">
 
-                <section id="software-area">
+                    <div class="option">
 
-                    <button class="edit"><p>編輯</p></button>
+                      <input type="radio" class="radio" 
+                       id="automobiles" name="category">
 
-                    <h2>使用軟體類型</h2>
+                      <label><span class="montserrat">Figma</span></label>
 
-                    <form class="selection" action="">
+                    </div>
+          
+                    <div class="option">
 
-                        <div class="row">
-                      
-                            <div class="select-box">
+                      <input type="radio" class="radio" 
+                       id="adobeIllustrator" name="category" />
 
-                              <div class="options-container">
+                      <label><span class="montserrat long-words">Adobe illustrator</span></label>
 
-                                <div class="option">
+                    </div>
+          
+                    <div class="option">
 
-                                  <input type="radio" class="radio" 
-                                   id="automobiles" name="category">
+                      <input type="radio" class="radio" 
+                       id="adobeXD" name="category" />
 
-                                  <label><span class="montserrat">Figma</span></label>
+                      <label><span class="montserrat">Adobe XD</span></label>
 
-                                </div>
-                      
-                                <div class="option">
-
-                                  <input type="radio" class="radio" 
-                                   id="adobeIllustrator" name="category" />
-
-                                  <label><span class="montserrat long-words">Adobe illustrator</span></label>
-
-                                </div>
-                      
-                                <div class="option">
-
-                                  <input type="radio" class="radio" 
-                                   id="adobeXD" name="category" />
-
-                                  <label><span class="montserrat">Adobe XD</span></label>
-
-                                </div>
-                      
-                                <div class="option">
-                                    
-                                  <input type="radio" class="radio" 
-                                   id="sketch" name="category" />
-
-                                  <label><span class="montserrat">Sketch</span></label>
-
-                                </div>
-                      
-                              </div>
-                      
-                              <div class="selected">
-                                <h2>介面製圖</h2>
-                                <i class="fa-solid fa-caret-down"></i>
-                              </div>
-                      
-                              <!--Bug Code, Don't need to mind, It can't be erased-->
-                              <div class="search-box" style="display:none">
-                                <input type="text" placeholder="Start Typing..." />
-                              </div>
-
-                            </div>
-                      
-                            <div class="select-box">
-
-                              <div class="options-container">
-
-                                <div class="option">
-
-                                  <input type="radio" class="radio" 
-                                   id="excellent" name="category">
-
-                                  <label>精通</label>
-
-                                </div>
-                      
-                                <div class="option">
-
-                                  <input type="radio" class="radio" 
-                                   id="okay" name="category">
-
-                                  <label for="film">尚可</label>
-
-                                </div>
-
-                              </div>
-                      
-                              <div class="selected">
-                                <h2>精通</h2>
-                                <i class="fa-solid fa-caret-down"></i>
-                              </div>
-                      
-                              <!--Bug Code, Don't need to mind, It can't be erased-->
-                              <div class="search-box" style="display:none"> 
-                                <input type="text" placeholder="Start Typing..." />
-                              </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            
-                            <div class="select-box">
-
-                                <div class="options-container">
-  
-                                  <div class="option">
-  
-                                    <input type="radio" class="radio" 
-                                     id="automobiles" name="category">
-  
-                                    <label><span class="montserrat">Figma</span></label>
-  
-                                  </div>
+                    </div>
+          
+                    <div class="option">
                         
-                                  <div class="option">
-  
-                                    <input type="radio" class="radio" 
-                                     id="adobeIllustrator" name="category" />
-  
-                                    <label><span class="montserrat long-words">Adobe illustrator</span></label>
-  
-                                  </div>
-                        
-                                  <div class="option">
-  
-                                    <input type="radio" class="radio" 
-                                     id="adobeXD" name="category" />
-  
-                                    <label><span class="montserrat">Adobe XD</span></label>
-  
-                                  </div>
-                        
-                                  <div class="option">
-                                      
-                                    <input type="radio" class="radio" 
-                                     id="sketch" name="category" />
-  
-                                    <label><span class="montserrat">Sketch</span></label>
-  
-                                  </div>
-                        
-                                </div>
-                        
-                                <div class="selected">
-                                  <h2>介面製圖</h2>
-                                  <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                        
-                                <!--Bug Code, Don't need to mind, It can't be erased-->
-                                <div class="search-box" style="display:none">
-                                  <input type="text" placeholder="Start Typing..." />
-                                </div>
+                      <input type="radio" class="radio" 
+                       id="sketch" name="category" />
 
-                            </div>
+                      <label><span class="montserrat">Sketch</span></label>
 
-                            <div class="select-box">
+                    </div>
+          
+                  </div>
+          
+                  <div class="selected">
+                    <h2>介面製圖</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+          
+                  <!--Bug Code, Don't need to mind, It can't be erased-->
+                  <div class="search-box" style="display:none">
+                    <input type="text" placeholder="Start Typing..." />
+                  </div>
 
-                                <div class="options-container">
-  
-                                  <div class="option">
-  
-                                    <input type="radio" class="radio" 
-                                     id="excellent" name="category">
-  
-                                    <label>精通</label>
-  
-                                  </div>
-                        
-                                  <div class="option">
-  
-                                    <input type="radio" class="radio" 
-                                     id="okay" name="category">
-  
-                                    <label for="film">尚可</label>
-  
-                                  </div>
-  
-                                </div>
-                        
-                                <div class="selected">
-                                  <h2>精通</h2>
-                                  <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                        
-                                <!--Bug Code, Don't need to mind, It can't be erased-->
-                                <div class="search-box" style="display:none"> 
-                                  <input type="text" placeholder="Start Typing..." />
-                                </div>
-  
-                            </div>
-  
-                        </div>
+              </div>
 
-                    </form>
+              <div class="select-box">
 
-                </section>
+                  <div class="options-container">
 
-                <section id="reset-information">
+                    <div class="option">
 
-                    <button class="edit"><p>編輯</p></button>
+                      <input type="radio" class="radio" 
+                       id="excellent" name="category">
 
-                    <form class="reset-information-area" action="">
+                      <label>精通</label>
 
-                        <div class="reset-information">
+                    </div>
+          
+                    <div class="option">
 
-                            <div class="row">
+                      <input type="radio" class="radio" 
+                       id="okay" name="category">
 
-                                <div class="col-md-2 text-end">
-                  
-                                    <span class="password">舊密碼：</span>
-                  
-                                </div>
-                  
-                                <div class="col-md-8 text-start">
-                  
-                                    <input type="password" id="password">
-
-                                    <span onclick="showHide()">
-                                        <i class="fa-solid fa-eye toggle" id="toggle"></i>
-                                    </span>
-                  
-                                </div>
-                  
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-2 text-end">
-                  
-                                    <span class="password">新密碼：</span>
-                  
-                                </div>
-                  
-                                <div class="col-md-8 text-start">
-                  
-                                    <input type="password">
-                  
-                                </div>
-                  
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-2 text-end">
-                  
-                                    <span class="password">確認新密碼：</span>
-                  
-                                </div>
-                  
-                                <div class="col-md-8 text-start">
-                  
-                                    <input type="password">
-                  
-                                </div>
-                  
-                            </div>
-
-                        </div>
-
-                    </form>
-
-                </section>
-
-                <section id="line">
-
-                    <div class="line-account-correction">
-
-                        <div class="line-account-correction-methods">
-
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-
-                            <h2><span class="montserrat">Line</span> 帳號綁定</h2>
-
-                            <h3>綁定後可即時接收最新通知</h3>
-
-                            <ol>                        
-                                <li>點選進行綁定</li>
-                                <li>選擇您要接收通知的聊天室 （建議選擇 1 對 1 聊天室）</li>
-                                <li>點選同意並連動</li>
-                            </ol>
-
-                        </div>
+                      <label for="film">尚可</label>
 
                     </div>
 
-                </section>
+                  </div>
+          
+                  <div class="selected">
+                    <h2>精通</h2>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+          
+                  <!--Bug Code, Don't need to mind, It can't be erased-->
+                  <div class="search-box" style="display:none"> 
+                    <input type="text" placeholder="Start Typing..." />
+                  </div>
 
-            </main>
+              </div>
 
-        </div>
+          </div>
 
-        <!--External JS-->
-        <script src="./assets/app.js"></script>
+      </form>
 
-        <script src="./assets/forms.js"></script>
+    </section>
+
+    <section id="reset-information">
+
+      <button class="edit"><p>編輯</p></button>
+
+      <form class="reset-information-area" action="">
+
+          <div class="reset-information">
+
+              <div class="row">
+
+                  <div class="col-md-2 text-end">
     
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    </main>
+                      <span class="password">舊密碼：</span>
     
+                  </div>
+    
+                  <div class="col-md-8 text-start">
+    
+                      <input type="password" id="password">
+
+                      <span onclick="showHide()">
+                          <i class="fa-solid fa-eye toggle" id="toggle"></i>
+                      </span>
+    
+                  </div>
+    
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-2 text-end">
+    
+                      <span class="password">新密碼：</span>
+    
+                  </div>
+    
+                  <div class="col-md-8 text-start">
+    
+                      <input type="password">
+    
+                  </div>
+    
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-2 text-end">
+    
+                      <span class="password">確認新密碼：</span>
+    
+                  </div>
+    
+                  <div class="col-md-8 text-start">
+    
+                      <input type="password">
+    
+                  </div>
+    
+              </div>
+
+          </div>
+
+      </form>
+
+    </section>
+
+    <section id="line">
+
+      <div class="line-account-correction">
+
+          <div class="line-account-correction-methods">
+
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+              </label>
+
+              <h2><span class="montserrat">Line</span> 帳號綁定</h2>
+
+              <h3>綁定後可即時接收最新通知</h3>
+
+              <ol>                        
+                  <li>點選進行綁定</li>
+                  <li>選擇您要接收通知的聊天室 （建議選擇 1 對 1 聊天室）</li>
+                  <li>點選同意並連動</li>
+              </ol>
+
+          </div>
+
+      </div>
+
+    </section>
+
+    <!--External JS-->
+    <script src="./assets/app.js"></script>
+
+    <script src="./assets/forms.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

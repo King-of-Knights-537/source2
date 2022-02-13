@@ -10,6 +10,7 @@
     }
 }
 
+/*Common Selectors*/
 html{
     scroll-behavior: smooth;
 }
@@ -20,17 +21,23 @@ a{
     color: none !important;
     text-decoration: none !important;
 }
+.red{
+    color: #B62122 !important;
+}
+.grey{
+    color: #717274;
+}
 span.noto-sans-tc{
     font-family: "Noto Sans TC", sans-serif !important;
 }
 span.montserrat{
     font-family: 'Montserrat', sans-serif !important;
 }
+span.bold{
+    font-weight: 700;
+}
 span.long-words{
     font-size: 20px !important;
-}
-span.red{
-    color: #B62122 !important;
 }
 i{
     font-size: 25px;
@@ -49,8 +56,6 @@ button p{
     text-align: center !important;
     margin-bottom: 0.1em;
 }
-
-/*Common Selectors*/
 header{
     width: 100%;
 }
@@ -105,6 +110,9 @@ img{
 }
 img.logo:hover{
     opacity: .7; transition: .5s ease all;
+}
+img.big-image{
+    margin-left: -4em; margin-top: 1em;
 }
 .jumbotron{
     margin-top: -2px !important;
@@ -178,6 +186,75 @@ img.logo:hover{
     }
     100%{
         transform: translate(0px, 0px);
+    }
+}
+
+/*Sidebar*/
+.sidebar{
+    width: 120px; height: 100vh; 
+    position: fixed; top: 0;
+    text-align: center; 
+    background: #FFF; z-index: 50; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .7s ease;
+} 
+.sidebar:hover{
+    width: 270px; text-align: left;
+}
+.sidebar .logo{
+    width: 50px; position: static;
+}
+.sidebar ul{
+    margin-bottom: 0 !important;
+}
+.sidebar ul li{
+    padding: 35px 0; list-style: none;
+}  
+.sidebar:hover ul li{
+    padding-left: 2.2em;
+}
+.sidebar span{
+    color: #717274; font-size: 20px; 
+    letter-spacing: 1px;
+    display: none;
+}
+.sidebar:hover ul li span{
+    float: right; margin-right: 3em;
+    animation: fadeIn 2.5s;
+} 
+.sidebar:hover span{
+    display: inline;
+    cursor: auto;
+}
+.sidebar .bottom-area{
+    /*Alignment*/
+    position: absolute; 
+    left: 0; right: 0; bottom: 0;
+    margin-left: auto; margin-right: auto;
+}
+.sidebar .bottom-area .user-area{
+    background: #EAEAEA; padding: 2em 0;
+    cursor: pointer; 
+}
+.sidebar:hover .user-area{
+    padding-left: 1.5em;
+}
+.sidebar .bottom-area .user-area .user{
+    display: none;
+    animation: fadeIn 1.5s;
+}
+.sidebar:hover .bottom-area .user-area .user{
+    display: inline;
+}
+.sidebar .bottom-area .user-area .user a{
+    font-size: 20px; 
+    color: #B62122 !important;
+    margin-left: 1em;
+}
+
+@media (max-height:740px) {
+    .bottom-area ul{
+        display: none;
     }
 }
 
@@ -255,6 +332,7 @@ footer{
     width: 100%; 
     background: #000;
     position: relative;
+    z-index: 100;
 }
 footer .container{
     padding-top: 4em; padding-bottom: 2em;
