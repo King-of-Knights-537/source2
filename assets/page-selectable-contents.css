@@ -1,3 +1,10 @@
+.suggested-tools, .url{
+    margin-top: 1.25em;
+}
+.statement{
+    font-size: 20px !important;
+    margin: 0.8em 0; 
+}
 /*Page-Contents*/
 .selectable-content{
     width: 100%; 
@@ -10,12 +17,14 @@
 }
 .selectable-content ul{
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0; margin: 0;
 }
 .selectable-content ul li{
     display: inline-block;
-    padding: 10px;
+    margin: 0 0.75em;
+}
+.inside-navbar ul li{
+    margin: 1.5em 3em;
 }
 .selectable-content button{
     width: 200px; padding: 0.55em 0;
@@ -42,14 +51,16 @@
     text-align: center;
 }
 .selectable-content section nav h2.active{
-    color: #B62122;
+    color: #D11329;
 }
 .selectable-content section h2,
 .selectable-content section p,
 .selectable-content section ol{
     color: #717274; font-size: 23px;
     letter-spacing: 1.5px;
-    margin: 1em 1em; 
+}
+.selectable-content section p{
+    margin-bottom: 0.5em;
 }
 .selectable-content nav ul li h2{
     cursor: pointer;
@@ -72,23 +83,24 @@
     display: flex !important;  
     margin-top: 1.5em;
 }
-.selectable-content section main .article-2{
+.selectable-content section main .align-center{
     align-items: center !important;
 }
 .selectable-content section main .instruction{
     margin-left: 7em !important;
-}
-.selectable-content section main p.statement{
-    font-size: 20px !important;
-    margin: 0.8em 0; 
+    margin-bottom: 2em;
 }
 .selectable-content section main .center-contents{
     display: flex !important;
     justify-content: center !important;
 }
+.selectable-content section main .center-contents div,
 .selectable-content section main .center-contents article{
     display: block !important;
     text-align: justify;
+}
+.selectable-content section main .center-contents img{
+    display: block; margin: 3em 0;
 }
 .selectable-content section main h2{
     font-size: 30px; font-weight: bold;

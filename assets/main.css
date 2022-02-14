@@ -17,9 +17,21 @@ html{
 body{
     padding: 0;
 }
+h2,h3{
+    letter-spacing: 2px !important;
+}
 a{
     color: none !important;
     text-decoration: none !important;
+}
+.bold{
+    font-weight: 700;
+}
+.light-red{
+    color: #D11329 !important;
+}
+.black{
+    color: black !important;
 }
 .red{
     color: #B62122 !important;
@@ -27,16 +39,13 @@ a{
 .grey{
     color: #717274;
 }
-span.noto-sans-tc{
+.noto-sans-tc{
     font-family: "Noto Sans TC", sans-serif !important;
 }
-span.montserrat{
+.montserrat{
     font-family: 'Montserrat', sans-serif !important;
 }
-span.bold{
-    font-weight: 700;
-}
-span.long-words{
+.long-words{
     font-size: 20px !important;
 }
 i{
@@ -111,8 +120,17 @@ img{
 img.logo:hover{
     opacity: .7; transition: .5s ease all;
 }
+img.medium-image{
+    margin-left: -10em !important; 
+    margin-top: 1em !important;
+}
 img.big-image{
-    margin-left: -4em; margin-top: 1em;
+    margin-left: -4em !important; 
+    margin-top: 1em !important;
+}
+img.left-big-image{
+    margin-top: 1em !important; 
+    margin-left: -1.25em !important;
 }
 .jumbotron{
     margin-top: -2px !important;

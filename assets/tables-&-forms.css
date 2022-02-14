@@ -1,0 +1,43 @@
+/*Page Contents*/
+tbody, td, tfoot, th, thead, tr {
+    border-color: none !important; 
+    border-style: none !important; 
+    border-width: none !important; 
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: #FCFCFC !important;
+}
+.green-point{
+    content: ''; position: absolute;
+    width: 15px; height: 15px;
+    background: #11C00E; border-radius: 100%;
+    margin-top: 6px; margin-left: -220px;
+}
+.notification{
+    width: 100%; 
+    padding-left: 125px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.notification table{
+    width: 85%;
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, 
+                rgba(0, 0, 0, 0.1) 0px 10px 10px;
+}
+.notification th, .notification td{
+    padding: 1.25em 3em !important;
+}
+.notification th{
+    text-align: center;
+    vertical-align: middle !important;
+}
+.notification table h2,
+.notification table p{
+    font-size: 25px;
+    margin-bottom: 0 !important;
+}
+.notification p{
+    text-align: left;
+}
