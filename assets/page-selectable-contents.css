@@ -113,3 +113,33 @@
 .selectable-content section main h4{
     font-size: 23px; margin: 1em 1.8em;
 }
+
+/*Extra*/
+.design-and-progress-area header,
+.design-and-progress-area nav{
+    text-align: left !important;
+    width: 90%; margin-left: 6em;
+}
+.design-and-progress-area nav ul li{
+    margin: 0.5em 0;
+    margin-right: 2.6em !important;
+}
+.design-and-progress-area nav h2.active::after{
+    content: ""; position: relative; 
+    display: block; top: 0.5em; height: 0.2em; 
+    background-color: #D11329; 
+    animation: fadeRight 0.75s;
+}
+@keyframes fadeRight {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.application-function h2{
+    margin: 1em 0 !important;
+    font-weight: 500 !important;
+    font-size: 30px !important;
+}

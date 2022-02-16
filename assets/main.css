@@ -15,7 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    padding: 0;
+    margin: 0;
+}
+p{
+    letter-spacing: 1.5px;
 }
 h2,h3{
     letter-spacing: 2px !important;
@@ -23,6 +26,7 @@ h2,h3{
 a{
     color: none !important;
     text-decoration: none !important;
+    letter-spacing: 1.5px;
 }
 .bold{
     font-weight: 700;
@@ -50,6 +54,11 @@ a{
 }
 i{
     font-size: 25px;
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, 
+.fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    line-height: 1.08 !important; 
+    font-size: 35px !important;
 }
 ol, ul {
     padding-left: 0 !important;
@@ -117,6 +126,9 @@ section .container img{
 img{
     cursor: pointer;
 }
+img.contact-logo{
+    margin-bottom: 1.5em;
+}
 img.logo:hover{
     opacity: .7; transition: .5s ease all;
 }
@@ -134,6 +146,19 @@ img.left-big-image{
 }
 .jumbotron{
     margin-top: -2px !important;
+}
+.outer{
+    display: grid; 
+    width: 100%;
+    height: 100%;
+}
+.inner{
+    justify-self: center; 
+    align-self: center;
+}
+.inner h2{
+    margin-top: 0 !important;
+    margin-bottom: 5em;
 }
 
 /*Navbar*/
@@ -550,5 +575,151 @@ footer .top-button{
     .flex-direction-nav .flex-next {
         right: -100px !important;
         text-align: right;
+    }
+}
+
+/*Contact us*/
+.contact-area{
+    width: 100%; height: 100vh;
+    padding-left: 125px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    margin-top: -4.5em;
+}
+.contact-info h1{
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 1.09em;
+    position: relative; left: 0.6em;
+}
+.contact-info h2{
+    font-size: 25px;
+    letter-spacing: 1px !important;
+}
+.contact-info .company-name{
+    margin: 1em 0;
+    text-align: center;
+}
+.contact-info .sections{
+    display: block; 
+    color: #717274;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+.contact-info .sections div{
+    display: inline-flex; float: left; 
+    width: 300px; margin: 0.8em 2em;
+}
+.contact-info .sections div i,
+.contact-info .sections div p,
+.contact-info .sections div a{
+    display: inline; 
+}
+.contact-info .sections div p,
+.contact-info .sections div a{
+    margin-left: 1.25em;
+}
+.contact-info .sections div a{
+    color: #717274;
+    text-decoration: underline !important;
+}
+
+/*Loaders*/
+.loader{
+    position: fixed; z-index: 100;
+    background: rgba(0, 0, 0, .38);
+    width: 100%; height: 100%; 
+    /*Alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.alert-minder{
+    width: 650px; height: 540px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 1em 3.5em;
+}
+.loader .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.alert-minder h2{
+    font-weight: 600; font-size: 30px;
+    letter-spacing: 1px; text-align: center;
+    margin-top: 2em;
+}
+.alert-minder p{
+    font-weight: normal; font-size: 25px;
+    line-height: 142.4%; letter-spacing: 1px;
+    color: #717274; text-align: left;
+}
+.instruction{
+    margin: 5em 0;
+}
+button.next-time{
+    width: 200px; padding: 0.55em 0;
+    background: #FFF; border-radius: 35px; 
+    font-size: 23px; border: 1px solid #717274;
+}
+button.lets-do-it{
+    width: 200px; padding: 0.55em 0; 
+    background: rgba(0, 0, 0, 0.51);
+    border-radius: 35px; font-size: 23px;
+    border: none;
+}
+button.next-time p{
+    color:#717274 !important;
+    letter-spacing: 2.5px;
+}
+button.lets-do-it p{
+    color: #FFF !important;
+    letter-spacing: 2.5px;
+}
+
+.loader-2{
+    display: none;
+}
+.loading-animation-area{
+    width: 100%; height: 100vh; z-index: 100;
+    background: #FFF; position: absolute;
+    top: 0; text-align: center;
+}
+.progress-area{
+    width: 100%;
+    /*Alignment*/
+    display: flex; justify-content: center;
+    align-items: center; 
+}
+.progress {
+    background: #F4F4F4; border-radius: 100px !important;
+    width: 920px; height: 30px !important;
+    overflow: none !important; 
+}
+.progress-value {
+    animation: loading 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px; background: #89E7BA;
+    height: inherit;
+}
+.loading-animation-area h2{
+    margin-bottom: 1.25em;
+    font-size: 40px;
+}
+.loading-animation-area p{
+    margin-top: 1.5em;
+    font-size: 30px;
+    color: #717274;
+}
+@keyframes loading {
+    0% {
+        width: 0; 
+    }
+    100% { 
+        width: 100%; 
     }
 }

@@ -1,11 +1,31 @@
 /*Page Contents*/
-tbody, td, tfoot, th, thead, tr {
-    border-color: none !important; 
-    border-style: none !important; 
-    border-width: none !important; 
+.proposing{
+    color: #036EEB !important;
 }
-.table-striped>tbody>tr:nth-of-type(even) {
-    --bs-table-accent-bg: #FCFCFC !important;
+.conducting{
+    color: #FBB604 !important;
+}
+button.taking-case{
+    background: #99CB98; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px; border: none;
+    padding: 7.5px 15px;
+}
+button.next-step{
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px; border: none;
+    padding: 15px 15px; margin-top: 1em;
+    width: 180px;
+}
+button.taking-case p,
+button.next-step p{
+    color: #FCFCFC !important;
+    font-size: 20px; font-weight: 500;
+    margin-bottom: 0 !important;
+}
+a.entering{
+    font-size: 24px;
 }
 .green-point{
     content: ''; position: absolute;
@@ -13,31 +33,121 @@ tbody, td, tfoot, th, thead, tr {
     background: #11C00E; border-radius: 100%;
     margin-top: 6px; margin-left: -220px;
 }
-.notification{
+.notification, .demand-list-area{
     width: 100%; 
     padding-left: 125px;
     margin-top: 80px;
     display: flex;
     justify-content: center;
 }
-.notification table{
-    width: 85%;
+.demand-list-area-2{
+    width: 100%; 
+    padding-left: 125px;
+    margin-top: 80px;
+}
+.notification tbody, .notification td, 
+.notification tfoot, .notification th, 
+.notification thead, .notification tr {
+    border-color: none !important; 
+    border-style: none !important; 
+    border-width: none !important; 
+}
+.demand-list-area tbody, .demand-list-area td, 
+.demand-list-area tfoot, .demand-list-area th, 
+.demand-list-area thead, .demand-list-area tr,
+.design-and-progress-area tbody, .design-and-progress-area td, 
+.design-and-progress-area tfoot, .design-and-progress-area th, 
+.design-and-progress-area thead, .design-and-progress-area tr{
+    border-right: 4px solid #FCFCFC !important;
+    border-bottom: none !important;
+}
+.demand-list-area-2 tr {
+    border-bottom: 1.5px solid #D0D0D0 !important;
+}
+.demand-list-area-2 .table-striped>tbody>tr:nth-child(1){
+    --bs-table-accent-bg: #F4F4F4 !important;
+}
+.demand-list-area-2 .table-striped>tbody>tr{
+    --bs-table-accent-bg: #FFF !important;
+}
+.notification .table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: #FFF !important;
+}
+.demand-list-area .table-striped>tbody>tr:nth-of-type(odd),
+.design-and-progress-area .table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #FFF !important;
+}
+.demand-list-area .table-striped>tbody>tr:nth-of-type(even),
+.design-and-progress-area .table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: #F4F4F4 !important;
+}
+
+table{
+    width: 85% !important;
     border: none !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, 
                 rgba(0, 0, 0, 0.1) 0px 10px 10px;
 }
-.notification th, .notification td{
-    padding: 1.25em 3em !important;
+.design-and-progress-area table{
+    width: 90% !important;
+    margin-left: 2em;
+    margin-top: 1em;
 }
-.notification th{
-    text-align: center;
+th, td{
+    padding: 1.25em 3em !important;
     vertical-align: middle !important;
 }
-.notification table h2,
-.notification table p{
-    font-size: 25px;
-    margin-bottom: 0 !important;
+th{
+    text-align: center !important;
 }
-.notification p{
+.design-and-progress-area td:nth-child(1){
+    --bs-table-accent-bg: #FFF !important;
+    border-right: none !important;
+    padding: 1em 1em !important;
+}
+.design-and-progress-area td{
+    padding: 1em 1.2em !important;
+}
+.design-and-progress-area td:nth-child(4){
     text-align: left;
+}
+.design-and-progress-area tr:nth-child(1) td:nth-child(4),
+.design-and-progress-area tr:nth-child(1) td:nth-child(5){
+    text-align: center;
+}
+.design-and-progress-area td:nth-child(5){
+    width: 35%; text-align: left;
+}
+table h2, table p{
+    font-size: 25px; color: #717274;
+    margin-bottom: 0 !important; 
+}
+.demand-list-area td{
+    text-align: center !important;
+}
+.demand-list-area table h2, table p{
+    font-size: 23px; color: #717274;
+}
+.demand-list-area-2 div{
+    display: flex;
+    justify-content: center;
+}
+.demand-list-area-2 .total-budget{
+    padding: 4em 0;
+}
+.demand-list-area-2 .total-budget h2{
+    letter-spacing: 5px !important;
+}
+.demand-list-area-2 td{
+    text-align: center !important;
+}
+.demand-list-area-2 .table-striped>tbody>tr p{
+    color: black !important;
+}
+.demand-list-area-2 a{
+    font-size: 23px;
+    text-decoration: underline !important;
+}
+.design-and-progress-area .table-striped>tbody>tr:nth-child(1) h2{
+    color: black !important; margin: 0;
 }

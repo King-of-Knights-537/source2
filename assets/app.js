@@ -15,8 +15,12 @@ $(document).ready(function() {
     });
 
     //Alert loader
-    $(".buttons button").click(function(){
+    $(".loader button").click(function(){
         $(".loader").hide();
+    });
+
+    $(".contract-button").click(function(){
+        $(".loader-2").show();
     });
  
     //Carousel 
