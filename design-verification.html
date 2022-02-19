@@ -16,14 +16,14 @@
   <link rel="stylesheet" href="./assets/login-form.css">
 
   <!--JS / jQuery--> 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
 
-  <title>Source | 回覆</title>
+  <title>Source | 手機驗證</title>
 
   <style>
 
@@ -41,10 +41,10 @@
   
       <section>
 
+        <!--Login-->
         <div class="login-form-container">
 
-          <!-- Reply-->
-          <div class="user reply">
+          <div class="user phone-verification">
 
             <div class="form-box">
 
@@ -52,12 +52,18 @@
 
                 <div class="form-control">
 
-                  <h3>已收到您的回覆，會有專人與你聯絡，再給您新的密碼！</h3>
+                  <h3>手機驗證</h3>
 
                   <div>
-                    <button class="grey active-click">返回登入頁</button>
+                    <input type="text" placeholder="輸入手機號碼"/>
                   </div>
-
+                  
+                  <div>
+                    <p class="red-button active-click">
+                      寄送驗證碼
+                    </p>
+                  </div>
+                  
                 </div>
             
               </form>
@@ -68,6 +74,37 @@
               <img src="./images/login-page-banner.svg" alt="" />
             </div>
 
+          </div>
+  
+          <!-- Forget-Password -->
+          <div class="user verification-code">
+
+            <div class="form-box">
+
+              <form action="">
+
+                <div class="form-control">
+
+                  <h3>手機驗證</h3>
+
+                  <div>
+                    <input type="text" placeholder="驗證碼"/>
+                  </div>
+
+                  <h3 class="red">驗證碼已寄出，180秒後失效</h3>
+
+                  <div>
+                    <button class="grey-button active-click">提交</button>
+                  </div>
+
+                </div>
+            
+              </form>
+
+            </div>
+
+            <div class="img-box">
+              <img src="./images/login-page-banner.svg" alt="" />
             </div>
 
           </div>

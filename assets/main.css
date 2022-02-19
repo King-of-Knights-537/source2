@@ -301,6 +301,28 @@ img.left-big-image{
     }
 }
 
+/*Right-Sidebar in Design-UI*/
+.right-sidebar{
+    width: 120px; height: 100vh; 
+    position: fixed; top: 0; right: 0;
+    background: #F8F8F8; z-index: 50; 
+    /*Inside-Alignment*/
+    display: flex; justify-content: center;
+    align-items: center;
+} 
+.right-sidebar ul{
+    margin-top: -1em;
+    margin-bottom: 0 !important;
+}
+.right-sidebar ul li{
+    padding: 35px 0; list-style: none;
+}  
+.right-sidebar span{
+    color: #717274; font-size: 20px; 
+    letter-spacing: 1px;
+    display: none;
+}
+
 /*Opening*/
 #opening{
     height: 100.18vh;
@@ -706,6 +728,14 @@ button.lets-do-it p{
     border-radius: 100px; background: #89E7BA;
     height: inherit;
 }
+@keyframes loading {
+    0% {
+        width: 0; 
+    }
+    100% { 
+        width: 100%; 
+    }
+}
 .loading-animation-area h2{
     margin-bottom: 1.25em;
     font-size: 40px;
@@ -715,11 +745,129 @@ button.lets-do-it p{
     font-size: 30px;
     color: #717274;
 }
-@keyframes loading {
-    0% {
-        width: 0; 
-    }
-    100% { 
-        width: 100%; 
-    }
+
+.loader-3{
+    display: none;
+}
+.loader-3 .alert-minder-area{
+    position: fixed; z-index: 100;
+    background: rgba(0, 0, 0, .38);
+    width: 100%; height: 100%; 
+    /*Alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.loader-3 .alert-minder{
+    width: 735px; height: 505px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.loader-3 .alert-minder p{
+    font-weight: normal; font-size: 20px;
+    letter-spacing: 2px; 
+}
+.loader-3 input{
+    width: 440px;
+}
+.loader-3 .inner > div{
+    display: flex; align-items: center;
+}
+.loader-3 .text-center{
+    display: block !important;
+}
+.loader-3 .entering-link{
+    margin-bottom: 7em;
+}
+.loader-3 .copying-link{
+    margin-bottom: 3em;
+}
+.loader-3 input::placeholder{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #BBBBBB;
+}
+
+.loader-4{
+    display: none;
+}
+.loader-4 .upload-area{
+    position: fixed; z-index: 500;
+    background: #FFF;
+    width: 100%; height: 100%; 
+    /*Alignment*/
+    top: 0; 
+}
+.loader-4 header{
+    width: 78%; display: block; margin: auto;
+    padding-top: 3em; padding-bottom: 1em;
+}
+.loader-4 a.previous i{
+    font-size: 45px !important;
+}
+.loader-4 p.previous{
+    position: relative; top: -9.5px;
+    display: inline; font-size: 20px;
+}
+.loader-4 .upload-area .row{
+    margin: 1em 1.5em;
+    justify-content: center;
+}
+.loader-4 .drop-area{
+    background: linear-gradient(0deg, #F2F2F2, #F2F2F2);
+    color: #717274; height: 700px; width: 80%;
+    display: flex; justify-content: center; align-items: center;
+}
+.loader-4 .introduction{
+    border: 2px solid #E6E6EA;
+    border-radius: 8px;
+}
+.loader-4 .introduction .related-page{
+    padding: 1em 1.5em; 
+    border-bottom: 4px solid #E6E6EA;
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+.loader-4 .introduction p,
+.loader-4 .introduction h2,
+.loader-4 .introduction h3{
+    font-size: 23px; margin-bottom: 0;
+}
+.loader-4 .introduction .link{
+    padding: 1em 1.5em; 
+}
+.loader-4 .introduction .link h3{
+    margin-bottom: .7em;
+}
+.loader-4 .introduction .link a{
+    text-decoration: underline !important;
+}
+.loader-4 .upload-button{
+    height: 500px;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+}
+.loader-4 .upload-button button p{
+    letter-spacing: 4px;
+}
+
+.loader-5{
+    display: none;
+}
+.loader-5 .alert-minder-area{
+    position: fixed; z-index: 500;
+    background: rgba(0, 0, 0, .38);
+    width: 100%; height: 100%; 
+    /*Alignment*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.loader-5 .alert-minder{
+    width: 735px; height: 505px;
+    background: #FFFFFF;
+    border-radius: 20px;
 }

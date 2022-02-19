@@ -13,6 +13,10 @@
   <!--CSS / Bootstrap-->
   <link rel="stylesheet" href="./assets/main.css">
 
+  <link rel="stylesheet" href="./assets/information-protection.css">
+
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
   <link rel="stylesheet" href="./assets/tables-&-forms.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,7 +31,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Source | 專案列表 - 設計需求</title>
+  <title>Source | 專案列表 - 上傳設計檔</title>
 
   <style>
 
@@ -40,34 +44,6 @@
 </head>
 
 <body>
-
-    <div class="loader-2">
-
-      <div class="loading-animation-area">
-
-        <div class="outer">
-
-          <div class="inner">
-
-            <h2 id="percentage" class="montserrat">35%</h2>
-
-            <div class="progress-area">
-
-              <div class="progress">
-                <div class="progress-value"></div>
-              </div>
-              
-            </div>
-
-            <p>正在生成合約，請稍候...</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>  
 
     <aside class="sidebar" id="">
 
@@ -82,23 +58,23 @@
               <li>
                   <a href="#">
 
-                    <img src="./images/pencil-vector.png" alt="Pencil-Vector">
+                    <img src="./images/grey-pencil-vector.png" alt="Pencil-Vector">
 
                     <span class="red">設計規範</span>
           
                   </a>
               </li>
               <li>
-                  <a href="design-project.html">
+                  <a href="#">
 
-                    <img src="./images/list-vector.png" alt="List-Vector">
+                    <img src="./images/red-list-vector.png" alt="List-Vector">
 
                     <span>專案列表</span>
           
                   </a>
               </li>
               <li>
-                  <a href="design-contact.html">
+                  <a href="#">
 
                     <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
 
@@ -157,102 +133,140 @@
 
     </aside>
 
-    <main class="demand-list-area-2">
+    <main class="selectable-content layout-review">
 
-        <div class="total-budget">
-            <h2 class="bold">專案總計金額：<span class="red">$100,000</span></h2>
-        </div>
+      <section class='section-1 active'>
 
-        <div>
-            <table class="table table-striped">
+        <header class="text-center">
+          <img src="./images/route-3.png" alt="">
+        </header>
 
-                <tbody>
-    
-                    <tr>
-                      <td>
-                        <h2 class="bold">階段</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">金額</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">預計撥款日</h2>
-                      </td>
-           
-                    </tr>
-    
-                    <tr>
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-             
-                    </tr>
-    
-                    <tr>
+        <nav class="inside-navbar text-start">
+        
+          <ul>
+            <li> 
+                <h2 class='btn-1 active'>網頁版</h2>
+            </li>
+            <li>
+                <h2 class='btn-2'>網頁手機版</h2>
+            </li>
+            <li>
+                <h2 class='btn-3'>App版</h2>
+            </li>
+            <li>
+                <h2 class='btn-4'>iPad App版</h2>
+            </li>
+          </ul> 
 
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-            
-                    </tr>
-    
-                    <tr>
+        </nav>
 
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-   
-                    </tr>
-    
-                    <tr>
+        <section class='section-1 active'>
 
-                      <td>
-                        <p class="bold">40%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 40,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-                  
-                    </tr>
-    
-                </tbody>
-    
-            </table>
-    
-        </div>
+          <div class="content-1 active">
 
-        <div class="total-budget">
-          <button class="next-step"><p>取消</p></button>
-          <button class="contract-button"><p>我要接案</p></button>
-        </div>
+              <main>
+
+                <div>
+
+                  f
+
+                </div>
+
+              </main>
+
+          </div>
+
+          <div class="content-2">
+
+            <main>
+
+              <div>
+
+                ff
+
+              </div>
+
+            </main>
+
+          </div>
+
+          <div class="content-3">
+
+            <main>
+
+              <div>
+
+                fff
+
+              </div>
+
+            </main>
+
+          </div>
+
+          <div class="content-4">
+
+            <main>
+
+              <div>
+
+                ffff
+
+              </div>
+
+            </main>
+
+          </div>
+
+      </section>
 
     </main>
+
+    <aside class="right-sidebar" id="">
+
+      <div class="top-area">
+        
+          <ul>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/document-management-icon.png" alt="">
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/payment-management-icon.png" alt="">
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/chat-room-icon.png" alt="">
+
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+
+                    <img src="./images/customer-service-icon.png" alt="Chat-Vector">
+
+                  </a>
+              </li>
+          </ul> 
+
+      </div>
+
+    </aside>
 
     <!--External JS-->
     <script src="./assets/app.js"></script>
 
     <script src="./assets/forms.js"></script>
+
+    <script src="./assets/page-selectable-contents.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

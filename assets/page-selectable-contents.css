@@ -5,6 +5,13 @@
     font-size: 20px !important;
     margin: 0.8em 0; 
 }
+.slide-toggle-button{
+    cursor: pointer;
+}
+.toggle-slider{
+    display: none;
+}
+
 /*Page-Contents*/
 .selectable-content{
     width: 100%; 
@@ -13,7 +20,6 @@
 }
 .selectable-content header{
     margin: 2em 0;
-    text-align: center;
 }
 .selectable-content ul{
     list-style: none;
@@ -88,7 +94,8 @@
 }
 .selectable-content section main .instruction{
     margin-left: 7em !important;
-    margin-bottom: 2em;
+    margin-top: -0.5em !important;
+    margin-bottom: 4em;
 }
 .selectable-content section main .center-contents{
     display: flex !important;
@@ -142,4 +149,292 @@
     margin: 1em 0 !important;
     font-weight: 500 !important;
     font-size: 30px !important;
+}
+
+/*Design UI*/
+.layout-review .inside-navbar{
+    margin-top: 2em;
+}
+.layout-review nav h2.active::after{
+    content: ""; position: relative; 
+    display: block; top: 0.5em; height: 0.2em; 
+    background-color: #D11329; 
+    animation: fadeRight 0.75s;
+}
+.layout-review .row{
+    margin: 5em 0;
+}
+.click-check{
+    margin: 5em 4em;
+}
+.layout-review button.update{
+    background: #FCFCFC;
+    width: 150px; padding: 0.6em 0;
+    outline: none; border: none; 
+    font-size: 20px; border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*Alignment*/
+    margin-left: 2em;
+}
+.layout-review button.update p{
+    margin-bottom: 0 !important;
+    color: #B62122 !important;
+}
+.layout-review button.update i{
+    font-size: 20px !important;
+    margin-right: 5px;
+}
+.layout-review button.update:hover{
+    transition: all .5s ease;
+    background:	#F0F0F0;
+}
+.layout-review button.chat-room{
+    position: fixed; bottom: 6em; right: 7.5em;
+    padding: 0.6em 0; width: 80px; height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 100%; background: #FCFCFC;
+}
+.layout-image{
+    margin-left: 5em !important;
+    margin: 2.5em 0;
+}
+.layout-review .content-1 a{
+    margin: 0 2.5em;
+}
+.layout-review p{
+    display: inline; color:#717274;
+    letter-spacing: 2px; font-size: 20px;
+}
+.layout-review span.icon{
+    display: inline; 
+    position: relative;
+    top: -3px;
+}
+.layout-review a.previous{
+    margin-left: 5em;
+}
+.layout-review a.previous i{
+    font-size: 45px !important;
+}
+.layout-review p.previous{
+    position: relative; top: -9px;
+}
+.layout-review .introduction{
+    border: 2px solid #E6E6EA;
+    border-radius: 8px;
+}
+.layout-review .introduction .related-page{
+    padding: 1em 1.5em; 
+    border-bottom: 4px solid #E6E6EA;
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+.layout-review .introduction p,
+.layout-review .introduction h2,
+.layout-review .introduction h3{
+    font-size: 23px; margin-bottom: 0;
+}
+.layout-review .introduction .link{
+    padding: 1em 1.5em; 
+}
+.layout-review .introduction .link h3{
+    margin-bottom: .7em;
+}
+.layout-review .introduction .link a{
+    text-decoration: underline !important;
+}
+.layout-review .jumbotron {
+    width: 90%; height: 100vh;
+    background: url(../images/client-layout.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2em; cursor: pointer;
+}
+.layout-review span.feedback{
+    width: 40px; height: 40px; 
+    font-family: "Montserrat"; font-size: 18px;
+    text-align: center; 
+    background: url(../images/feedback-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.layout-review span.feedback p{
+    color: #FFF; position: relative;
+    top: 5.5px;
+}
+.layout-review .feedback-area .feedback{
+    background: #F8F8F8;
+    border-radius: 8px;
+    margin: 2em 0;
+}
+.layout-review .feedback-area .timing{
+    padding: 1em 1.5em;
+    display: flex; align-items: center;
+}
+.layout-review .feedback-area h2{
+    margin-left: 1em; margin-bottom: 0;
+    color: #717274; font-family: "Montserrat";
+    font-size: 23px; 
+}
+.layout-review .feedback-area .timing span{
+    background: #B62122; border-radius: 100%;
+    width: 40px; height: 40px; 
+    font-family: "Montserrat";
+    text-align: center;
+}
+.layout-review .feedback-area .timing span p{
+    color: #FFF; position: relative;
+    left: 1px; top: 5px;
+}
+.layout-review .feedback-area .contents{
+    padding: 0 1.5em; 
+    padding-top: 0.25em !important;
+    padding-bottom: 1.25em !important;
+}
+.layout-review .giving-feedback{
+    border-top: 4px solid #E6E6EA;
+}
+.layout-review .giving-feedback .me{
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0;
+}
+.layout-review .giving-feedback .me span{
+    background: #FFF; border-radius: 30px;
+    padding: 0.25em 1.8em; text-align: center;
+    margin-right: 1.75em; margin-left: 1.5em;
+}
+.layout-review .giving-feedback .me span p{
+    color: #B62122; position: relative;
+}
+.layout-review .giving-feedback .client{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 0;
+}
+.layout-review .giving-feedback .client span{
+    background: #B62122; border-radius: 30px;
+    padding: 0.25em 1.8em; text-align: center;
+    margin-right: 1.75em; margin-left: 1.5em;
+}
+.layout-review .giving-feedback .client span p{
+    color: #FFF; position: relative;
+}
+.layout-review .giving-feedback .client h2{
+    margin-left: 0;
+}
+.layout-review .inputWithIcon{
+    border-radius: 8px;
+    padding: 4em 1.5em; 
+    padding-bottom: 2.5em !important;
+}
+.layout-review .inputWithIcon input{
+    width: 100%; background: #E7E7E7;
+    padding-right: 4em;
+}
+.layout-review .inputWithIcon input::placeholder{
+    color: #BBBBBB; 
+    font-family: "Montserrat";
+    letter-spacing: 2.5px;
+}
+.layout-review .inputWithIcon input:focus{
+    color: #000 !important;
+}
+.layout-review .inputWithIcon {
+    position: relative;
+}
+.layout-review .inputWithIcon.inputIconBg i {
+    color: #BBBBBB; 
+    width: 45px; height: 45px;
+    background-color: none;
+    border-radius: 100%;
+    text-align: center; cursor: pointer;
+    padding-top: 3.5px; padding-right: 1px;
+    margin-top: 8px;
+    position: absolute; right: 1.2em; 
+}
+.layout-review .inputWithIcon.inputIconBg input:focus + i {
+    color: #fff;
+    background-color: #036EEB;
+    transition: 1s ease all;
+}
+
+/*Notification*/
+.notification{
+    width: 90%; 
+    padding-left: 15em;
+    margin-top: 80px;
+}
+.notification header{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification .table-area{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 5em;
+}
+.notification .icon{
+    align-items: center;
+}
+.notification .icon span{
+    font-size: 20px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+.notification .switch{
+    align-items: center;
+}
+.notification .instruction{
+    align-items: center;
+    margin: 0 !important;
+}
+.notification .inner h2{
+    margin-bottom: 0 !important;
+    color: #717274;;
+}
+.notification ul{
+    color: #717274;; 
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.notification .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.notification .switch input { 
+    opacity: 0; width: 0; height: 0;
+}
+.notification .slider {
+    position: absolute; cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc; 
+    border-radius: 34px;
+    transition: .4s;
+}
+.notification .slider:before {
+    position: absolute; content: "";
+    height: 24px; width: 24px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+.notification input:checked + .slider {
+    background-color: #BA2D2E;
+}
+.notification input:focus + .slider {
+    box-shadow: 0 0 1px #BA2D2E;
+}
+.notification input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
 }

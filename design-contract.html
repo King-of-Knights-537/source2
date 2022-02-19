@@ -13,6 +13,8 @@
   <!--CSS / Bootstrap-->
   <link rel="stylesheet" href="./assets/main.css">
 
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
   <link rel="stylesheet" href="./assets/tables-&-forms.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -34,6 +36,9 @@
     body{
       font-family: "Noto Sans TC", sans-serif;
     }
+    .sidebar{
+      z-index: 500;
+    }
 
   </style>
 
@@ -41,33 +46,35 @@
 
 <body>
 
-    <div class="loader-2">
+    <div class="loader-5">
 
-      <div class="loading-animation-area">
+      <div class="alert-minder-area">
 
-        <div class="outer">
+        <div class="alert-minder">
 
-          <div class="inner">
+          <div class="outer">
 
-            <h2 id="percentage" class="montserrat">35%</h2>
+            <div class="inner">
 
-            <div class="progress-area">
-
-              <div class="progress">
-                <div class="progress-value"></div>
-              </div>
+              <h2>設計師簽名</h2>
               
+              <div class="text-center">
+
+                <button class="next-step">
+                    <p>確定</p>
+                </button>
+            
+              </div>
+
             </div>
-
-            <p>正在生成合約，請稍候...</p>
-
+  
           </div>
 
         </div>
 
       </div>
 
-    </div>  
+    </div>
 
     <aside class="sidebar" id="">
 
@@ -157,95 +164,9 @@
 
     </aside>
 
-    <main class="demand-list-area-2">
+    <main class="selectable-content design-and-progress-area">
 
-        <div class="total-budget">
-            <h2 class="bold">專案總計金額：<span class="red">$100,000</span></h2>
-        </div>
-
-        <div>
-            <table class="table table-striped">
-
-                <tbody>
-    
-                    <tr>
-                      <td>
-                        <h2 class="bold">階段</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">金額</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">預計撥款日</h2>
-                      </td>
-           
-                    </tr>
-    
-                    <tr>
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-             
-                    </tr>
-    
-                    <tr>
-
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-            
-                    </tr>
-    
-                    <tr>
-
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-   
-                    </tr>
-    
-                    <tr>
-
-                      <td>
-                        <p class="bold">40%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 40,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-                  
-                    </tr>
-    
-                </tbody>
-    
-            </table>
-    
-        </div>
-
-        <div class="total-budget">
-          <button class="next-step"><p>取消</p></button>
-          <button class="contract-button"><p>我要接案</p></button>
-        </div>
+       
 
     </main>
 
@@ -253,6 +174,8 @@
     <script src="./assets/app.js"></script>
 
     <script src="./assets/forms.js"></script>
+
+    <script src="./assets/page-selectable-contents.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

@@ -49,7 +49,7 @@ button.edit p{
 }
 button.edit:hover{
     transition: all .5s ease;
-    background:	#FFF7FF;
+    background:	#F0F0F0;
 }
 
 /*Toggle Buttons*/
@@ -179,7 +179,7 @@ form.reset-information-area .reset-information .row .col-md-2{
     align-items: center;
 }
 span .toggle{
-    position: relative; 
+    position: relative; font-size: 25px !important;
     left: -50px; top: 1.5px;
     color: #BBBBBB; cursor: pointer;
 }
@@ -188,6 +188,11 @@ span .toggle{
 #line{
     border-bottom: none !important;
     padding-bottom: 4em;
+}
+#line a{
+    position: relative;
+    float: right; font-size: 23px;
+    text-decoration: underline !important;
 }
 #line input:checked + .slider {
     background: #11C00E;

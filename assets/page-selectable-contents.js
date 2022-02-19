@@ -99,4 +99,9 @@ $(document).ready(function(){
         $("section h2.btn-4").addClass("active");
     });
 
+    //Slide-Toggle
+    $(".slide-toggle-button-1").click(function() {
+        $(".toggle-slider-1").slideToggle(700);
+    });
+
 });

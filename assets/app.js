@@ -22,7 +22,27 @@ $(document).ready(function() {
     $(".contract-button").click(function(){
         $(".loader-2").show();
     });
- 
+
+    $(".project-link").click(function(){
+        $(".loader-3").show();
+    });
+
+    $(".loader-3 button").click(function(){
+        $(".loader-3").hide();
+    });
+
+    $(".upload").click(function(){
+        $(".loader-4").show();
+    });
+
+    $(".loader-4 .previous").click(function(){
+        $(".loader-4").hide();
+    });
+
+    $(".to-contract").click(function(){
+        $(".loader-5").show();
+    });
+
     //Carousel 
     $('.flexslider').flexslider({
         animation: "slide",

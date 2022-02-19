@@ -15,13 +15,21 @@ button.next-step{
     background: rgba(0, 0, 0, 0.5); 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 30px; border: none;
-    padding: 15px 15px; margin-top: 1em;
+    padding: 15px 15px; margin: 0 1em;
+    width: 180px;
+}
+button.contract-button{
+    background: #B82627;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px; border: none;
+    padding: 15px 15px; margin: 0 1em;
     width: 180px;
 }
 button.taking-case p,
-button.next-step p{
+button.next-step p,
+button.contract-button p{
     color: #FCFCFC !important;
-    font-size: 20px; font-weight: 500;
+    font-size: 20px !important; font-weight: 500;
     margin-bottom: 0 !important;
 }
 a.entering{
@@ -31,9 +39,9 @@ a.entering{
     content: ''; position: absolute;
     width: 15px; height: 15px;
     background: #11C00E; border-radius: 100%;
-    margin-top: 6px; margin-left: -220px;
+    margin-top: 6px; margin-left: -170px;
 }
-.notification, .demand-list-area{
+.demand-list-area{
     width: 100%; 
     padding-left: 125px;
     margin-top: 80px;
@@ -52,6 +60,9 @@ a.entering{
     border-style: none !important; 
     border-width: none !important; 
 }
+.demand-list-area td:nth-child(5){
+    padding: 1em 2em !important;
+}
 .demand-list-area tbody, .demand-list-area td, 
 .demand-list-area tfoot, .demand-list-area th, 
 .demand-list-area thead, .demand-list-area tr,
@@ -61,6 +72,9 @@ a.entering{
     border-right: 4px solid #FCFCFC !important;
     border-bottom: none !important;
 }
+.demand-list-area-2 .table-striped{
+    width: 1100px !important;
+}
 .demand-list-area-2 tr {
     border-bottom: 1.5px solid #D0D0D0 !important;
 }
@@ -69,6 +83,9 @@ a.entering{
 }
 .demand-list-area-2 .table-striped>tbody>tr{
     --bs-table-accent-bg: #FFF !important;
+}
+.demand-list-area-2 .table-striped td:nth-child(3){
+    text-align: left !important;
 }
 .notification .table-striped>tbody>tr:nth-of-type(even) {
     --bs-table-accent-bg: #FFF !important;
@@ -94,7 +111,7 @@ table{
     margin-top: 1em;
 }
 th, td{
-    padding: 1.25em 3em !important;
+    padding: 1.25em 0em !important;
     vertical-align: middle !important;
 }
 th{
