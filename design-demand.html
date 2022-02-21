@@ -13,6 +13,8 @@
   <!--CSS / Bootstrap-->
   <link rel="stylesheet" href="./assets/main.css">
 
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
   <link rel="stylesheet" href="./assets/tables-&-forms.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -34,6 +36,9 @@
     body{
       font-family: "Noto Sans TC", sans-serif;
     }
+    .sidebar{
+      z-index: 500;
+    }
 
   </style>
 
@@ -41,33 +46,59 @@
 
 <body>
 
-    <div class="loader-2">
+    <div class="loader">
 
-      <div class="loading-animation-area">
+        <div class="alert-minder outer">
+        
+            <div class="inner">
 
-        <div class="outer">
+                <h2>此專案現階段已暫停實作</h2>
 
-          <div class="inner">
+                <div class="text-center">
 
-            <h2 id="percentage" class="montserrat">35%</h2>
+                    <button class="next-step">
+                        <p>好</p>
+                    </button>
+                    
+                </div>
 
-            <div class="progress-area">
-
-              <div class="progress">
-                <div class="progress-value"></div>
-              </div>
-              
             </div>
+  
+        </div>
 
-            <p>正在生成合約，請稍候...</p>
+    </div>  
 
+    <div class="loader-5">
+
+      <div class="alert-minder-area">
+
+        <div class="alert-minder">
+
+          <div class="outer">
+
+            <div class="inner">
+
+              <h2>您與此專案解約，<br>請簽署解約合約並送出</h2>
+              
+              <div class="text-center">
+                
+                <a href="">
+                  <button class="next-step">
+                    <p>查看合約</p>
+                  </button>
+                </a>
+
+              </div>
+
+            </div>
+  
           </div>
 
         </div>
 
       </div>
 
-    </div>  
+    </div>
 
     <aside class="sidebar" id="">
 
@@ -82,7 +113,7 @@
               <li>
                   <a href="#">
 
-                    <img src="./images/pencil-vector.png" alt="Pencil-Vector">
+                    <img src="./images/grey-pencil-vector.png" alt="Pencil-Vector">
 
                     <span class="red">設計規範</span>
           
@@ -91,7 +122,7 @@
               <li>
                   <a href="design-project.html">
 
-                    <img src="./images/list-vector.png" alt="List-Vector">
+                    <img src="./images/red-list-vector.png" alt="List-Vector">
 
                     <span>專案列表</span>
           
@@ -157,95 +188,256 @@
 
     </aside>
 
-    <main class="demand-list-area-2">
+    <main class="selectable-content design-and-progress-area">
 
-        <div class="total-budget">
-            <h2 class="bold">專案總計金額：<span class="red">$100,000</span></h2>
-        </div>
+        <header>
 
-        <div>
-            <table class="table table-striped">
-
-                <tbody>
-    
-                    <tr>
-                      <td>
-                        <h2 class="bold">階段</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">金額</h2>
-                      </td>
-                      <td>
-                        <h2 class="bold">預計撥款日</h2>
-                      </td>
-           
-                    </tr>
-    
-                    <tr>
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-             
-                    </tr>
-    
-                    <tr>
-
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
+            <img src="./images/project-route-1.png" alt="">
             
-                    </tr>
-    
-                    <tr>
+        </header>
 
-                      <td>
-                        <p class="bold">20%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 20,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-   
-                    </tr>
-    
-                    <tr>
+        <section class='section-1 active'>
 
-                      <td>
-                        <p class="bold">40%</p>
-                      </td>
-                      <td>
-                        <p class="bold">$ 40,000</p>
-                      </td>
-                      <td>
-                        <p class="bold">2022/1/22</p>
-                      </td>
-                  
-                    </tr>
-    
-                </tbody>
-    
-            </table>
-    
-        </div>
+            <nav class="inside-navbar">
+            
+                <ul>
+                    <li> 
+                        <h2 class='btn-1 active'>設計需求</h2>
+                    </li>
+                    <li>
+                        <h2 class='btn-2'>樹狀圖</h2>
+                    </li>
+                    <li>
+                        <h2 class='btn-3'>備註</h2>
+                    </li>
+                </ul> 
 
-        <div class="total-budget">
-          <button class="next-step"><p>取消</p></button>
-          <button class="contract-button"><p>我要接案</p></button>
-        </div>
+            </nav>
+
+            <div class="content-1 active">
+
+                <main>
+
+                    <div class="instruction">
+
+                        <table class="table table-striped">
+
+                            <tbody>
+                
+                                <tr>
+                                  <td>
+
+                                  </td>
+                                  <td>
+                                    <h2 class="bold">主要項目</h2>
+                                  </td>
+                                  <td>
+                                    <h2 class="bold">數量</h2>
+                                  </td>
+                                  <td>
+                                    <h2 class="bold">總設計頁面</h2>
+                                  </td>
+                                  <td>
+                                    <h2 class="bold">說明</h2>
+                                  </td>
+                                </tr>
+                
+                                <tr>
+                                  <td>
+                                    <p class="">1</p>
+                                  </td>
+                                  <td>
+                                    <p>網站主視覺設計</p>
+                                  </td>
+                                  <td>
+                                    
+                                  </td>
+                                  <td>
+                                    
+                                  </td>
+                                  <td>
+                                    <p>專業設計師依客戶需求客製化設計全站視覺風格並使用合法授權免費、商用圖庫，讓網站視覺更有記憶張力</p>
+                                  </td>
+                                </tr>
+                
+                                <tr>
+                                  <td>
+                                    <p>2</p>
+                                  </td>
+                                  <td>
+                                    <p>首頁</p>
+                                  </td>
+                                  <td>
+                                    <p>2022/1/22</p>
+                                  </td>
+                                  <td>
+                                    <p class="">1</p>
+                                  </td>
+                                  <td>
+                                    <p>首頁資料管理程式：依首頁定稿樣式建置各區塊圖文資料管理程式<br><br>
+                                       資料管理程式：依首頁定稿樣式建置各區塊
+                                    </p>
+                                  </td>
+                                </tr>
+                
+                                <tr>
+                                  <td>
+                                    <p class="">3</p>
+                                  </td>
+                                  <td>
+                                    <p>最新消息</p>
+                                  </td>
+                                  <td>
+                                    <p>2</p>
+                                  </td>
+                                  <td>
+                                    <p>最新消息</p>
+                                  </td>
+                                  <td>
+                                    <p>首頁資料管理程式：依首頁定稿樣式建置各區塊圖文資料管理程式<br><br>
+                                       資料管理程式：依首頁定稿樣式建置各區塊
+                                    </p>
+                                  </td>
+                                </tr>
+                
+                                <tr>
+                                  <td>
+                                    <p class="">4</p>
+                                  </td>
+                                  <td>
+                                    <p>服務項目</p>
+                                  </td>
+                                  <td>
+                                    <p class="">3</p>
+                                  </td>
+                                  <td>
+                                    <p>廣告-服務項目內頁<br>
+                                       攝影-服務項目內頁
+                                    </p>
+                                  </td>
+                                  <td>
+                                    <p>首頁資料管理程式：依首頁定稿樣式建置各區塊圖文資料管理程式<br><br>
+                                       資料管理程式：依首頁定稿樣式建置各區塊
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <p class="">5</p>
+                                  </td>
+                                  <td>
+                                    <p>網站主視覺設計</p>
+                                  </td>
+                                  <td>
+                                    <p class="">1</p>
+                                  </td>
+                                  <td>
+                                    <p></p>
+                                  </td>
+                                  <td>
+                                    
+                                  </td>
+                                </tr>
+                
+                            </tbody>
+                
+                        </table>
+
+                    </div>
+
+                    <button class="next-step to-contract">
+                        <p>下一步</p>
+                    </button>
+
+                </main>
+
+            </div>
+
+            <div class="content-2">
+
+                <main>
+
+                    <div class="instruction">
+
+                      <img src="./images/business-plan-mind-map.jpg" alt="">
+
+                    </div>
+
+                    <button class="next-step to-contract">
+                        <p>下一步</p>
+                    </button>
+
+                </main>
+
+            </div>
+
+            <div class="content-3">
+
+                <main>
+
+                  <div class="instruction">
+
+                    <section class="application-function">
+
+                      <div>
+
+                        <p>
+                          APP需要的功能：<br>
+                          高相似度搜尋引擎 (100%為目標)：<br>
+                          當用戶搜尋某個字的時候相關字應該呈現給用戶選擇，而用戶之前搜尋過的相關字將會先出現在選擇的上方產品條碼掃瞄比價功能：<br>
+                          必須能夠掃過物品條碼呈現目前有哪幾家商家有賣此物品，以及呈現不同的價位顯示價為由低至高<br><br>
+                          系統提示功能：<br>
+                          顯示用戶追蹤物品價格跳動，以及用戶點數即將過期通知等廣告用途<br><br>
+                          產品分享：<br>
+                          用戶能夠將在APP以及我們網站上所查看
+                        </p>
+
+                      </div>
+
+                    </section>
+
+                  </div>
+
+                  <button class="next-step to-contract">
+                    <p>下一步</p>
+                  </button>
+
+                </main>
+
+            </div>
+
+        </section>
+
+        <section class='section-2'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
+
+        <section class='section-3'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
+
+        <section class='section-4'>
+
+            <nav>
+            
+                
+
+            </nav>
+
+        </section>
 
     </main>
 
@@ -253,6 +445,8 @@
     <script src="./assets/app.js"></script>
 
     <script src="./assets/forms.js"></script>
+
+    <script src="./assets/page-selectable-contents.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

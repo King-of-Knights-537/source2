@@ -93,7 +93,7 @@
     align-items: center !important;
 }
 .selectable-content section main .instruction{
-    margin-left: 7em !important;
+    margin-left: 1em !important;
     margin-top: -0.5em !important;
     margin-bottom: 4em;
 }
@@ -145,15 +145,225 @@
         width: 100%;
     }
 }
-.application-function h2{
-    margin: 1em 0 !important;
-    font-weight: 500 !important;
-    font-size: 30px !important;
+section.application-function {
+    display: flex !important;
+    justify-content: center;
+    text-align: justify;
+    padding: 2em 0;
+}
+section.application-function div{
+    width: 560px;
+}
+
+/*Contract-Maker*/
+.contract-maker{
+    width: 100%; 
+    padding-left: 125px;
+    margin-top: 80px;
+}
+.contract-maker-list{
+    margin-top: 5em;
+}
+.contract-maker-list h2{
+    margin-bottom: 1.5em;
+}
+.contract-maker-list .contracting,
+.contract-maker-list .outsourcing{
+    display: flex; 
+    justify-content: center;
+}
+.contract-maker-list .company{
+    width: 600px; display: flex;
+    justify-content: space-between;
+    font-size: 25px; 
+}
+.contract-maker-list .contents{
+    margin-left: 5em;
+}
+.contract-maker-list .provement{
+    margin-top: 3em;
+}
+.contract-maker-list .signature{
+    position: relative; top: -5px;
+    margin-left: -4.5em !important;
+    font-size: 18px; letter-spacing: 2.5px;
+}
+.contract-maker-list form{
+    width: 72.5%;
+    font-size: 25px;
+    margin: 4em 0;
+}
+.contract-maker-list input[type="text"]{
+    border: none !important; 
+    outline: none !important;
+    width: 215px !important;
+    text-align: center;
+}
+.contract-maker-list input.short{
+    width: 100px !important;
+    text-align: center;
+}
+.contract-maker-list form h4{
+    font-size: 25px;
+}
+.contract-maker-list form div{
+    margin: 2em 0;
+}
+.contract-maker-list form ol{
+    position: relative; left: 1.25em;
+}
+.contract-maker-list form label{
+    margin-right: 1em;
+}
+.contract-maker-list .next-step{
+    margin-top: 3em;
+}
+.contract-maker-list .sign-contents{
+    margin: 1em 0;
+}
+.contractor{
+    margin-top: 1em;
+}
+.contract-maker-list .sign-contents .contents,
+.contract-maker-list .sign-contents .contents-2{
+    display: flex; 
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+.contract-maker-list .sign-contents .contents div:nth-child(2){
+    width: 450px; text-align: justify;
+}
+.contract-maker-list .sign-contents div{
+    margin: 0.2em 0;
+}
+.contract-maker-list .sign-contents .contents-2 div:nth-child(2){
+    width: 450px; 
+    border-bottom: 1px solid #BBBBBB;
+}
+.contract-maker-list .sign-contents .contents-2 input{
+    text-align: left; 
+    padding-left: 5px;
+    padding-bottom: 2px;
+    width: inherit !important;
+}
+.contract-maker-list .signature{
+    position: relative; 
+    float: right; top: 2px;
+    font-size: 18px; letter-spacing: 2.5px;
+}
+
+/*Remuneration*/
+.remuneration{
+    width: 100%; 
+    padding-left: 125px;
+    margin-top: 80px;
+}
+.remuneration-list{
+    margin-top: 5em;
+}
+.remuneration-list h2{
+    margin-bottom: 1.5em;
+}
+.remuneration .contracting,
+.remuneration .outsourcing{
+    display: flex; 
+    justify-content: center;
+}
+.remuneration-list .company{
+    width: 600px; display: flex;
+    justify-content: space-between;
+    font-size: 25px; 
+}
+.remuneration-list .contents{
+    margin-left: 5em;
+}
+.remuneration-list .provement{
+    margin-top: 3em;
+}
+.remuneration-list .signature{
+    position: relative; top: -5px;
+    margin-left: -4.5em !important;
+    font-size: 18px; letter-spacing: 2.5px;
+}
+.remuneration-list form{
+    width: 90%;
+    font-size: 25px;
+    margin: 4em 0;
+}
+.remuneration-list input[type="text"]{
+    border: none !important; 
+    outline: none !important;
+    width: 215px !important;
+    text-align: center;
+}
+.remuneration-list input.short{
+    width: 100px !important;
+    text-align: center;
+}
+.remuneration-list form h4{
+    font-size: 25px;
+}
+.remuneration-list form div h4{
+    display: inline;
+}
+.remuneration-list form label{
+    margin-right: 1em;
+}
+.remuneration-list hr.dashed{
+    margin: 2em 0; opacity: 1;
+    background-color: #FFF !important; 
+    border-top: 4px dashed #000;
+}
+.remuneration-list .next-step{
+    margin-top: 3em;
+}
+
+/*Payment-Setting*/
+.payment-setting{
+    margin-top: 5em;
+}
+.payment-setting .payment-form{
+    margin: 2em 0;
+    margin-left: 3.25em;
+    font-size: 25px;
+}
+.payment-setting .three-info .info{
+    display: inline-flex;
+    align-items: center;
+}
+.payment-setting .three-info input{
+    width: 230px; color: #000 !important;
+    text-align: center;
+    padding: 0.5em 0.8em;
+    margin-left: 0.75em;
+    margin-right: 3em;
+}
+.payment-setting .long-info{
+    margin: 1em 0;
+}
+.payment-setting .long-info input{
+    width: 618px; color: #000 !important;
+    padding: 0.5em 0.8em;
+    margin-left: 0.4em;
+    margin-right: 3em;
+    padding-left: 2em !important;
+}
+.payment-setting .next-step{
+    position: absolute;
+    left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    bottom: 1.5em;
+}
+.payment-setting .next-step span{
+    font-size: 25px;
+    position: relative;
+    left: 2.2em;
 }
 
 /*Design UI*/
 .layout-review .inside-navbar{
     margin-top: 2em;
+    margin-left: 2em;
 }
 .layout-review nav h2.active::after{
     content: ""; position: relative; 
@@ -255,7 +465,6 @@
     font-family: "Montserrat"; font-size: 18px;
     text-align: center; 
     background: url(../images/feedback-icon.png);
-    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
 }
@@ -333,11 +542,14 @@
 }
 .layout-review .inputWithIcon input{
     width: 100%; background: #E7E7E7;
-    padding-right: 4em;
+    padding-right: 3em !important;
+    padding-left: 1em !important;
+    padding: 0.5em 0;
 }
 .layout-review .inputWithIcon input::placeholder{
     color: #BBBBBB; 
     font-family: "Montserrat";
+    font-size: 22px;
     letter-spacing: 2.5px;
 }
 .layout-review .inputWithIcon input:focus{
@@ -347,14 +559,14 @@
     position: relative;
 }
 .layout-review .inputWithIcon.inputIconBg i {
-    color: #BBBBBB; 
-    width: 45px; height: 45px;
+    color: #BBBBBB; font-size: 25px !important;
+    width: 35px; height: 35px;
     background-color: none;
     border-radius: 100%;
     text-align: center; cursor: pointer;
-    padding-top: 3.5px; padding-right: 1px;
+    padding-top: 3.5px; 
     margin-top: 8px;
-    position: absolute; right: 1.2em; 
+    position: absolute; right: 1.4em; 
 }
 .layout-review .inputWithIcon.inputIconBg input:focus + i {
     color: #fff;
@@ -437,4 +649,45 @@
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(30px);
     transform: translateX(30px);
+}
+
+/*Project Upload*/
+section.project-upload-container{
+    display: inline-flex;
+    width: 92%;
+}
+.project-upload-area{
+    background: #F3F3F3;
+    border-radius: 12px;
+    width: 361px; height: 336px;
+    margin: 0 1.5em;
+}
+.project-upload-area h2, 
+.project-upload-area h3{
+    font-family: "Montserrat";
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #717274;
+}
+.project-upload-area h2{
+    padding-left: 0.5em;
+}
+.project-upload-area img{
+    margin-top: 2em;
+}
+section.description{
+    width: 92%; display: inline-flex;
+    margin: 2em 0; 
+}
+section.description textarea{
+    width: 1132px; height: 337px;
+    background: #F3F3F3 !important;
+    box-shadow: none !important;
+    border-radius: 12px; border: none;
+    resize: none; outline: none;
+    font-family: "Montserrat";
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #717274; letter-spacing: 2.25px;
+    padding: 1em 1em;
 }

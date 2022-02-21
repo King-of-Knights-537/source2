@@ -15,6 +15,10 @@ $(document).ready(function() {
     });
 
     //Alert loader
+    $("img.user-icon").click(function(){
+        $(".loader").show();
+    });
+
     $(".loader button").click(function(){
         $(".loader").hide();
     });
@@ -41,6 +45,14 @@ $(document).ready(function() {
 
     $(".to-contract").click(function(){
         $(".loader-5").show();
+    });
+
+    $(".signature").click(function(){
+        $(".loader-5").show();
+    });
+
+    $(".loader-5 button").click(function(){
+        $(".loader-5").hide();
     });
 
     //Carousel 

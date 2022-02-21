@@ -40,6 +40,9 @@ a{
 .red{
     color: #B62122 !important;
 }
+.blue{
+    color: #036EEB !important;
+}
 .grey{
     color: #717274;
 }
@@ -51,6 +54,12 @@ a{
 }
 .long-words{
     font-size: 20px !important;
+}
+.signature{
+    cursor: pointer;
+}
+hr{
+    height: 2.5px !important;
 }
 i{
     font-size: 25px;
@@ -264,6 +273,7 @@ img.left-big-image{
 .sidebar:hover ul li span{
     float: right; margin-right: 3em;
     animation: fadeIn 2.5s;
+    cursor: pointer;
 } 
 .sidebar:hover span{
     display: inline;
@@ -305,7 +315,7 @@ img.left-big-image{
 .right-sidebar{
     width: 120px; height: 100vh; 
     position: fixed; top: 0; right: 0;
-    background: #F8F8F8; z-index: 50; 
+    z-index: 50; 
     /*Inside-Alignment*/
     display: flex; justify-content: center;
     align-items: center;
@@ -649,7 +659,44 @@ footer .top-button{
     text-decoration: underline !important;
 }
 
+/*Upload-Successful*/
+.upload-successful{
+    width: 100%; height: 100vh;
+    padding-left: 125px;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+.upload-successful .icon-and-notification{
+    display: inline-flex;
+}
+.upload-successful .icon,
+.upload-successful .notification{
+    margin: 0 6em;
+}
+.upload-successful .notification h2{
+    font-size: 40px;
+    margin-bottom: 0.7em;
+}
+.upload-successful .notification h3{
+    display: inline;
+    font-size: 25px;
+    margin-right: 2em;
+}
+.upload-successful .notification p{
+    font-size: 25px;
+    position: relative;
+    top: 2em;
+}
+.upload-successful .notification button p{
+    top: 0 !important;
+}
+
 /*Loaders*/
+.try-again{
+    font-size: 23px;
+    letter-spacing: 0.155em;
+    margin-bottom: 2em;
+}
 .loader{
     position: fixed; z-index: 100;
     background: rgba(0, 0, 0, .38);
@@ -868,6 +915,11 @@ button.lets-do-it p{
 }
 .loader-5 .alert-minder{
     width: 735px; height: 505px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.loader-5 .alert-minder-2{
+    width: 582px; height: 621px;
     background: #FFFFFF;
     border-radius: 20px;
 }

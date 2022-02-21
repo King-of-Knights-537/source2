@@ -219,3 +219,13 @@ span .toggle{
     color: #717274; font-size: 20px;
     letter-spacing: 1px;
 }
+
+/*Reset-Personal-Information*/
+section#reset-personal-information{
+    border-bottom: none !important; 
+    margin-top: 6em; display: flex; 
+    justify-content: center;
+}
+section#reset-personal-information input{
+    
+}

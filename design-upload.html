@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="./assets/tables-&-forms.css">
 
+  <link rel="stylesheet" href="./assets/circular-menu-navigation.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!--JS / jQuery--> 
@@ -31,7 +33,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Source | 專案列表 - 上傳設計檔</title>
+  <title>Source | 專案列表 - 上傳UI</title>
 
   <style>
 
@@ -138,7 +140,7 @@
       <section class='section-1 active'>
 
         <header class="text-center">
-          <img src="./images/route-3.png" alt="">
+          <img src="./images/route-4.png" alt="">
         </header>
 
         <nav class="inside-navbar text-start">
@@ -168,7 +170,41 @@
 
                 <div>
 
-                  f
+                  <section class="project-upload-container">
+
+                    <div class="project-upload-area">
+                      <h2 class="text-start">設計檔</h2>
+                      <img src="./images/project-upload-icon.png" alt="">
+                      <h3>點擊或拖移檔案至此</h3>
+                    </div>
+  
+                    <div class="project-upload-area">
+                      <h2 class="text-start">字型檔</h2>
+                      <img src="./images/project-upload-icon.png" alt="">
+                      <h3>點擊或拖移檔案至此</h3>
+                    </div>
+  
+                    <div class="project-upload-area">
+                      <h2 class="text-start">其他資料（可上傳多個檔案）</h2>
+                      <img src="./images/project-upload-icon.png" alt="">
+                      <h3>點擊或拖移檔案至此</h3>
+                    </div>
+  
+                  </section>
+
+                  <section class="description text-start">
+                    <textarea name="" id="" placeholder="備註說明"></textarea>
+                  </section>
+
+                  <div class="text-center">
+
+                    <a href="design-upload-successful.html">
+                      <button class="next-step">
+                        <p>下一步</p>
+                      </button>
+                    </a>
+
+                  </div>
 
                 </div>
 
@@ -224,38 +260,34 @@
 
     <aside class="right-sidebar" id="">
 
-      <div class="top-area">
-        
-          <ul>
-              <li>
-                  <a href="#">
+      <div class="menu">
 
-                    <img src="./images/document-management-icon.png" alt="">
-          
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
+        <input type="checkbox" id="toggle" />
 
-                    <img src="./images/payment-management-icon.png" alt="">
-          
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
+        <label id="show-menu" for="toggle">
 
-                    <img src="./images/chat-room-icon.png" alt="">
+          <div class="btn">
+            <img class="toggleBtn menuBtn" src="./images/circular-menu-open-icon.svg">
+            <img class="toggleBtn closeBtn" src="./images/circular-cross.icon.svg">
+          </div>
 
-                  </a>
-              </li>
-              <li>
-                  <a href="">
+          <div class="btn">
+            <img src="./images/circular-document-icon.svg" alt="">
+          </div>
 
-                    <img src="./images/customer-service-icon.png" alt="Chat-Vector">
+          <div class="btn">
+            <img src="./images/circular-money-icon.svg" alt="">
+          </div>
 
-                  </a>
-              </li>
-          </ul> 
+          <div class="btn">
+            <img src="./images/circular-chat-room-icon.svg" alt="">
+          </div>
+
+          <div class="btn">
+            <img src="./images/circular-q&a-icon.svg" alt="">
+          </div>
+
+        </label>
 
       </div>
 

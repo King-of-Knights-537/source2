@@ -18,6 +18,15 @@ button.next-step{
     padding: 15px 15px; margin: 0 1em;
     width: 180px;
 }
+span.next-step{
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; border: none; 
+    width: 180px; color: #FFF;
+    padding: 0 2em; cursor: pointer;
+    padding-top: 0.5em;
+    padding-bottom: 0.6em;
+}
 button.contract-button{
     background: #B82627;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
