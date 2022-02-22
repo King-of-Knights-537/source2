@@ -49,7 +49,78 @@ $(document).ready(function(){
         $("header .btn-3").removeClass("active");
         $("header .btn-4").addClass("active");
     });
+
+    //Footer Select-Content-Bar & Contents
+    $("footer .btn-1").click(function(e) {
+        e.preventDefault();
+        $("main .section-1").addClass("active");
+        $("main .section-2").removeClass("active");
+        $("main .section-3").removeClass("active");
+        $("main .section-4").removeClass("active");
+        $("main .section-5").removeClass("active");
+        $("footer .btn-1").addClass("active"); 
+        $("footer .btn-2").removeClass("active");
+        $("footer .btn-3").removeClass("active");
+        $("footer .btn-4").removeClass("active");
+        $("footer .btn-5").removeClass("active");
+    });
+
+    $("footer .btn-2").click(function(e) {
+        e.preventDefault();
+        $("main .section-1").removeClass("active");
+        $("main .section-2").addClass("active");
+        $("main .section-3").removeClass("active");
+        $("main .section-4").removeClass("active");
+        $("main .section-5").removeClass("active");
+        $("footer .btn-1").removeClass("active");
+        $("footer .btn-2").addClass("active"); 
+        $("footer .btn-3").removeClass("active");
+        $("footer .btn-4").removeClass("active");
+        $("footer .btn-5").removeClass("active");
+    });
     
+    $("footer .btn-3").click(function(e) {
+        e.preventDefault();
+        $("main .section-1").removeClass("active");
+        $("main .section-2").removeClass("active");
+        $("main .section-3").addClass("active");
+        $("main .section-4").removeClass("active");
+        $("main .section-5").removeClass("active");
+        $("footer .btn-1").removeClass("active");
+        $("footer .btn-2").removeClass("active");
+        $("footer .btn-3").addClass("active");
+        $("footer .btn-4").removeClass("active");
+        $("footer .btn-5").removeClass("active");
+    });
+
+    $("footer .btn-4").click(function(e) {
+        e.preventDefault();
+        $("main .section-1").removeClass("active");
+        $("main .section-2").removeClass("active");
+        $("main .section-3").removeClass("active");
+        $("main .section-4").addClass("active");
+        $("main .section-5").removeClass("active");
+        $("footer .btn-1").removeClass("active");
+        $("footer .btn-2").removeClass("active");
+        $("footer .btn-3").removeClass("active");
+        $("footer .btn-4").addClass("active");
+        $("footer .btn-5").removeClass("active");
+    });
+    
+    $("footer .btn-5").click(function(e) {
+        e.preventDefault();
+        $("main .section-1").removeClass("active");
+        $("main .section-2").removeClass("active");
+        $("main .section-3").removeClass("active");
+        $("main .section-4").removeClass("active");
+        $("main .section-5").addClass("active");
+        $("footer .btn-1").removeClass("active");
+        $("footer .btn-2").removeClass("active");
+        $("footer .btn-3").removeClass("active");
+        $("footer .btn-4").removeClass("active");
+        $("footer .btn-5").addClass("active");
+    });
+
     //Main Select-Content-Bar & Contents
     $("section h2.btn-1").click(function(e) {
         e.preventDefault();

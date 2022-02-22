@@ -28,6 +28,9 @@ a{
     text-decoration: none !important;
     letter-spacing: 1.5px;
 }
+a > span, ul li span{
+    cursor: pointer;
+}
 .bold{
     font-weight: 700;
 }
@@ -43,8 +46,11 @@ a{
 .blue{
     color: #036EEB !important;
 }
+.green{
+    color: #84C883 !important;
+}
 .grey{
-    color: #717274;
+    color: #717274 !important;
 }
 .noto-sans-tc{
     font-family: "Noto Sans TC", sans-serif !important;
@@ -273,11 +279,9 @@ img.left-big-image{
 .sidebar:hover ul li span{
     float: right; margin-right: 3em;
     animation: fadeIn 2.5s;
-    cursor: pointer;
 } 
 .sidebar:hover span{
     display: inline;
-    cursor: auto;
 }
 .sidebar .bottom-area{
     /*Alignment*/
@@ -754,7 +758,7 @@ button.lets-do-it p{
     display: none;
 }
 .loading-animation-area{
-    width: 100%; height: 100vh; z-index: 100;
+    width: 100%; height: 110%; z-index: 100;
     background: #FFF; position: absolute;
     top: 0; text-align: center;
 }
@@ -922,4 +926,19 @@ button.lets-do-it p{
     width: 582px; height: 621px;
     background: #FFFFFF;
     border-radius: 20px;
+}
+.loader-5 textarea{
+    width: 420px; height: 300px;
+    background: none;
+    box-shadow: none !important;
+    border-radius: 12px; border: none;
+    resize: none; outline: none;
+    font-family: "Montserrat";
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #BBBBBB; letter-spacing: 2.25px;
+    padding: 1em 1em;
+}
+.loader-5 textarea::placeholder{
+    color: #BBBBBB;
 }

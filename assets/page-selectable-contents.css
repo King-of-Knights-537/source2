@@ -121,6 +121,113 @@
     font-size: 23px; margin: 1em 1.8em;
 }
 
+.selectable-content .search-box{
+    display: flex; align-items: center;
+}
+.selectable-content .search-box input{
+    width: 350px; margin-right: 1.25em;
+}
+.selectable-content .search-box input::placeholder{
+    color: #C4C4C4;
+}
+.selectable-content .fa-magnifying-glass{
+    color: #C4C4C4; padding: 0.55em;
+    border-radius: 100%; font-size: 25px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.selectable-content .table-area{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+.selectable-content .table-area .table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #FFF;
+}
+.selectable-content .table-area .table-striped>tbody>tr{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    border-radius: 15px; height: 125px !important;
+    text-align: center;
+}
+.selectable-content .table-area .table-striped{
+    box-shadow: none; 
+}
+.selectable-content .table-area .table-striped td:nth-child(1),
+.selectable-content .table-area .table-striped td:nth-child(2),
+.selectable-content .table-area .table-striped td:nth-child(3){
+    width: 220px;
+}
+.selectable-content .table-area .table>:not(caption)>*>* {
+    border-bottom: none;
+    box-shadow: none;
+}
+.selectable-content .contracting,
+.selectable-content .conducting,
+.selectable-content .auditing,
+.selectable-content .finished{
+    padding: 0.75em 1.75em;
+    box-shadow: 0px 4px 6px rgba(158, 199, 247, 0.2);
+    border-radius: 30px; color: #FFF !important; outline: none;
+    font-size: 20px; letter-spacing: 2px; border: none;
+    cursor: pointer; width: auto !important;
+}
+.selectable-content .contracting{
+    background: #3F90F0; 
+}
+.selectable-content .conducting{
+    background: #86D384;
+}
+.selectable-content .auditing{
+    background: #C4C4C4;
+}
+.selectable-content .finished{
+    background: #F57E7E;
+}
+.selectable-content .entering{
+    padding: 0.75em 1.75em; width: auto !important;
+    border: 1px solid #D6D7D7; outline: none;
+    border-radius: 8px; color: #A0A0A0;
+    font-size: 20px; letter-spacing: 2px;
+}
+.selectable-content .table p.green{
+    position: relative; top: 0.5em;
+}
+.selectable-content .table i{
+    color: #D7D7D7;
+    vertical-align: middle;
+    position: relative;
+    left: 1em;
+}
+.dropdown{
+    display: inline-block !important;
+    position: relative;
+}
+.dropdown div{
+    background: #fff; padding: 0.25em 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1; visibility:hidden;
+    position: absolute; min-width: 185px;
+    opacity: 0; transition: .3s ease all;
+    text-align: left; padding-left: 2em;
+    padding-top: .5em; padding-bottom: .5em;
+}
+.dropdown:hover div{
+    visibility: visible; opacity: 1;
+    display: block !important;
+}
+.dropdown div a{
+    text-decoration: none; color: #BBBBBB;
+    transition: .3s ease all; line-height: 2;
+    white-space: nowrap; font-size: 18px;
+}
+.dropdown div a > span{
+    vertical-align: middle; 
+    position: relative; 
+    left: 0.5em;
+}
+.dropdown div a > img{
+    width: 18px;
+}
+
 /*Extra*/
 .design-and-progress-area header,
 .design-and-progress-area nav{
@@ -572,6 +679,69 @@ section.application-function div{
     color: #fff;
     background-color: #036EEB;
     transition: 1s ease all;
+}
+
+/*File*/
+.demand-file-area{
+    width: 100%;
+    padding-left: 125px;
+    margin-top: 80px;
+}
+.demand-file-area .management{
+    width: 88%; margin: 0 6em;
+    margin-top: 2.5em;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.demand-file-area .management h2{
+    font-size: 25px;
+}
+.demand-file-area button{
+    margin: 0 0.5em;
+    padding: 0.7em 2.5em;
+    border-radius: 30px;
+    border: 2px solid #B62122;
+    background-color: #FFF;
+    color: #B62122;
+}
+.demand-file-area button p{
+    font-size: 20px;
+}
+.demand-file-area .table-area{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demand-file-area .table{
+    width: 80% !important; 
+}
+.demand-file-area .table>:not(caption)>*>* {
+    text-align: center;
+    border-bottom: none !important;
+    border-right: 2px solid #E1E1E1;
+}
+.demand-file-area .table a.file{
+    font-size: 23px;
+    text-decoration: underline !important;
+}
+.demand-file-area .table tr{
+    height: 75px;
+}
+.demand-file-area .table tr td:nth-child(2){
+    text-align: left;
+    padding-left: 2em !important;
+}
+.demand-file-area .table tr:nth-child(1) td{
+    text-align: center;
+    padding-left: 0 !important;
+}
+.demand-file-area .table tr td{
+    width: 110px;
+}
+.demand-file-area .table tr td:nth-child(1){
+    width: 50px;
 }
 
 /*Notification*/

@@ -8,8 +8,18 @@
 button.taking-case{
     background: #99CB98; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 30px; border: none;
-    padding: 7.5px 15px;
+    border-radius: 35px; border: none;
+    padding: 9px 20px; color: #FCFCFC !important;
+}
+button.not-ready{
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 35px; border: none;
+    padding: 9px 25px; 
+}
+button.not-ready p{
+    color: #FCFCFC !important; 
+    font-size: 20px;
 }
 button.next-step{
     background: rgba(0, 0, 0, 0.5); 
@@ -151,7 +161,17 @@ table h2, table p{
 .demand-list-area td{
     text-align: center !important;
 }
-.demand-list-area table h2, table p{
+.demand-list-area-2 .table td:nth-child(1){
+    width: 100px !important;
+}
+.demand-list-area-2 .table td:nth-child(2),
+.demand-list-area-2 .table td:nth-child(3),
+.demand-list-area-2 .table td:nth-child(4),
+.demand-list-area-2 .table td:nth-child(5){
+    width: 200px !important;
+    text-align: center !important;
+}
+.demand-list-area-2 table h2, table p{
     font-size: 23px; color: #717274;
 }
 .demand-list-area-2 div{
@@ -167,8 +187,11 @@ table h2, table p{
 .demand-list-area-2 td{
     text-align: center !important;
 }
-.demand-list-area-2 .table-striped>tbody>tr p{
-    color: black !important;
+.demand-list-area-2 .table p{
+    color: #000;
+}
+.demand-list-area-2 button.next-step{
+    padding: 0.5 1em !important;
 }
 .demand-list-area-2 a{
     font-size: 23px;

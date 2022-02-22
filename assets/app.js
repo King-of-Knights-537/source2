@@ -55,6 +55,14 @@ $(document).ready(function() {
         $(".loader-5").hide();
     });
 
+    $("#reminder").click(function(){
+        $(".loader-5").show();
+    });
+
+    $(".loader-5 .close").click(function(){
+        $(".loader-5").hide();
+    });
+
     //Carousel 
     $('.flexslider').flexslider({
         animation: "slide",
