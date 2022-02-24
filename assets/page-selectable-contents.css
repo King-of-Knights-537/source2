@@ -78,7 +78,7 @@
 }
 .selectable-content section main{
     text-align: center;
-    padding: 2em 0;
+    padding: 2em 0; margin-bottom: 2em;
     animation: 1s fadeIn;
 }
 .selectable-content section main div{
@@ -148,8 +148,9 @@
     border-radius: 15px; height: 125px !important;
     text-align: center;
 }
-.selectable-content .table-area .table-striped{
+.selectable-content .table-area .table{
     box-shadow: none; 
+    width: 90% !important;
 }
 .selectable-content .table-area .table-striped td:nth-child(1),
 .selectable-content .table-area .table-striped td:nth-child(2),
@@ -159,6 +160,16 @@
 .selectable-content .table-area .table>:not(caption)>*>* {
     border-bottom: none;
     box-shadow: none;
+}
+.selectable-content .table-area .table-2 td:nth-child(5),
+.selectable-content .table-area .table-2 td:nth-child(6){
+    width: 200px;
+}
+.selectable-content .table-area .table-2 td:nth-child(6)::after{
+    content: ''; display: block;
+    position: absolute; background: #F0F0F0;
+    width: 5px; height: 70px;
+    margin-top: -3.8em;
 }
 .selectable-content .contracting,
 .selectable-content .conducting,
@@ -187,6 +198,11 @@
     border: 1px solid #D6D7D7; outline: none;
     border-radius: 8px; color: #A0A0A0;
     font-size: 20px; letter-spacing: 2px;
+}
+.selectable-content .entering:hover{
+    transition: .5s ease all;
+    background: #B62122;
+    color: #FFF;
 }
 .selectable-content .table p.green{
     position: relative; top: 0.5em;
@@ -318,6 +334,9 @@ section.application-function div{
 }
 .contract-maker-list form ol{
     position: relative; left: 1.25em;
+}
+.contract-maker-list form ol li{
+    margin: 0.75em 0;
 }
 .contract-maker-list form label{
     margin-right: 1em;
@@ -470,7 +489,6 @@ section.application-function div{
 /*Design UI*/
 .layout-review .inside-navbar{
     margin-top: 2em;
-    margin-left: 2em;
 }
 .layout-review nav h2.active::after{
     content: ""; position: relative; 

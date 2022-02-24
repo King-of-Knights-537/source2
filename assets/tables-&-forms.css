@@ -25,8 +25,11 @@ button.next-step{
     background: rgba(0, 0, 0, 0.5); 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 30px; border: none;
-    padding: 15px 15px; margin: 0 1em;
-    width: 180px;
+    margin: 0 1em; padding: 15px 15px;
+    width: 180px;  letter-spacing: 2px;
+}
+button.next-step-2{
+    width: 200px !important;
 }
 span.next-step{
     background: rgba(0, 0, 0, 0.5); 
@@ -34,8 +37,8 @@ span.next-step{
     border-radius: 50px; border: none; 
     width: 180px; color: #FFF;
     padding: 0 2em; cursor: pointer;
-    padding-top: 0.5em;
-    padding-bottom: 0.6em;
+    padding-top: 0.5em; letter-spacing: 2px;
+    padding-bottom: 0.6em; font-size: 22px;
 }
 button.contract-button{
     background: #B82627;
@@ -48,7 +51,7 @@ button.taking-case p,
 button.next-step p,
 button.contract-button p{
     color: #FCFCFC !important;
-    font-size: 20px !important; font-weight: 500;
+    font-size: 22px !important; font-weight: 500;
     margin-bottom: 0 !important;
 }
 a.entering{
@@ -82,12 +85,12 @@ a.entering{
 .demand-list-area td:nth-child(5){
     padding: 1em 2em !important;
 }
-.demand-list-area tbody, .demand-list-area td, 
-.demand-list-area tfoot, .demand-list-area th, 
-.demand-list-area thead, .demand-list-area tr,
-.design-and-progress-area tbody, .design-and-progress-area td, 
-.design-and-progress-area tfoot, .design-and-progress-area th, 
-.design-and-progress-area thead, .design-and-progress-area tr{
+.demand-list-area td, .demand-list-area tfoot, 
+.demand-list-area th, .demand-list-area thead, 
+.demand-list-area tr,
+.design-and-progress-area td, .design-and-progress-area tfoot, 
+.design-and-progress-area th, .design-and-progress-area thead, 
+.design-and-progress-area tr{
     border-right: 4px solid #FCFCFC !important;
     border-bottom: none !important;
 }
@@ -111,11 +114,11 @@ a.entering{
 }
 .demand-list-area .table-striped>tbody>tr:nth-of-type(odd),
 .design-and-progress-area .table-striped>tbody>tr:nth-of-type(odd) {
-    --bs-table-accent-bg: #FFF !important;
+    --bs-table-accent-bg: #FFF;
 }
 .demand-list-area .table-striped>tbody>tr:nth-of-type(even),
 .design-and-progress-area .table-striped>tbody>tr:nth-of-type(even) {
-    --bs-table-accent-bg: #F4F4F4 !important;
+    --bs-table-accent-bg: #F4F4F4;
 }
 
 table{
@@ -161,9 +164,6 @@ table h2, table p{
 .demand-list-area td{
     text-align: center !important;
 }
-.demand-list-area-2 .table td:nth-child(1){
-    width: 100px !important;
-}
 .demand-list-area-2 .table td:nth-child(2),
 .demand-list-area-2 .table td:nth-child(3),
 .demand-list-area-2 .table td:nth-child(4),
@@ -174,10 +174,26 @@ table h2, table p{
 .demand-list-area-2 table h2, table p{
     font-size: 23px; color: #717274;
 }
-.demand-list-area-2 div{
-    display: flex;
+.demand-list-area-2 div,
+.demand-list-area-2 .budget-table{
+    display: flex !important;
     justify-content: center;
 }
+.budget-table table tr{
+    height: 110px;
+    border-right: none !important;
+}
+.budget-table table td:nth-child(1){
+    width: 150px !important;
+}
+.budget-table table tr:nth-child(1) td{
+    --bs-table-accent-bg: #F4F4F4 !important;
+}
+.budget-table table td{
+    border-right: none !important;
+    background: #FFF !important;
+}
+
 .demand-list-area-2 .total-budget{
     padding: 4em 0;
 }
@@ -199,4 +215,13 @@ table h2, table p{
 }
 .design-and-progress-area .table-striped>tbody>tr:nth-child(1) h2{
     color: black !important; margin: 0;
+}
+.instruction h2.topic{
+    font-size: 35px;
+}
+.instruction .table td{
+    height: 100px !important;
+}
+.instruction .table td:nth-last-child(1) p{
+    font-size: 20px;
 }

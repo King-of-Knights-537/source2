@@ -51,6 +51,10 @@ $(document).ready(function() {
         $(".loader-5").show();
     });
 
+    $(".designer-signature").click(function(){
+        $(".loader-5").show();
+    });
+
     $(".loader-5 button").click(function(){
         $(".loader-5").hide();
     });
