@@ -55,9 +55,9 @@ selectedAll.forEach((selected) => {
 });
 
 //To Show Password
-function showHide(){
+function showHide1(){
   
-  var x = document.getElementById("password");
+  var x = document.getElementById("password1");
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -65,6 +65,36 @@ function showHide(){
   };
 
 };
+
+function showHide2() {
+
+  var y = document.getElementById("password2");
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
+  };
+
+};
+
+function showHide3() {
+
+  var z = document.getElementById("password3");
+  if (z.type === "password") {
+    z.type = "text";
+  } else {
+    z.type = "password";
+  };
+
+};
+
+//Checkbox
+function onlyOne(checkbox) {
+  var checkboxes = document.getElementsByName('check')
+  checkboxes.forEach((item) => {
+      if (item !== checkbox) item.checked = false
+  })
+}
 
 //Edit Button
 

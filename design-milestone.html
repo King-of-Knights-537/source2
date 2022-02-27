@@ -13,11 +13,13 @@
   <!--CSS / Bootstrap-->
   <link rel="stylesheet" href="./assets/main.css">
 
+  <link rel="stylesheet" href="./assets/information-protection.css">
+
   <link rel="stylesheet" href="./assets/page-selectable-contents.css">
 
   <link rel="stylesheet" href="./assets/tables-&-forms.css">
 
-  <link rel="stylesheet" href="./assets/signature-pad.css">
+  <link rel="stylesheet" href="./assets/milestone.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -26,14 +28,12 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Source | 專案列表 - 線上合約</title>
+  <title>Source | 專案列表 - 上傳UI</title>
 
   <style>
 
@@ -41,7 +41,7 @@
       font-family: "Noto Sans TC", sans-serif;
     }
     footer{
-      background: none;
+        background: none;
     }
 
   </style>
@@ -70,7 +70,7 @@
                   </a>
               </li>
               <li>
-                  <a href="design-project.html">
+                  <a href="#">
 
                     <img src="./images/red-list-vector.png" alt="List-Vector">
 
@@ -79,7 +79,7 @@
                   </a>
               </li>
               <li>
-                  <a href="design-contact.html">
+                  <a href="#">
 
                     <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
 
@@ -138,101 +138,92 @@
 
     </aside>
 
-    <main class="contract-maker">
+    <main class="milestone">
 
-      <div class="contract-maker-list">
-
-        <h2 class="text-center bold">保密條約</h2>
-
-        <div class="contracting">
-
-          <div class="company">
-
-            <div>
-              <h3>發包單位索爾斯科技有限公司</h2>
-            </div>
+      <header class="text-center">
+        <img src="./images/route-4.png" alt="">
+      </header>
   
-            <div>
-              <h3>(以下簡稱甲方)</h2>
-            </div>
-  
-          </div>
+      <div class="milestone-area">
 
-        </div>
+        <h2 class="grey topic">＊完成日不得超過 2021年 10 月 31 日</h2>
 
-        <div class="outsourcing">
-
-          <div class="company">
-  
-            <div>
-              <h3>承包單位</h3>
-            </div>
-  
-            <div>
-              <h3>(以下簡稱乙方)</h3>
-            </div>
-  
-          </div>
+        <div class="milestone-table-area">
           
-        </div>
+          <div class="milestone-table">
 
-        <div class="contents">
+            <div class="project">
 
-          <h3 class="text-center provement">甲方委託乙方 <a href="#signature-pad-area"><span class="black">＿ ＿ ＿</span></a> 網頁專案，經雙方同意所訂合約條款如下：</h3>
-
-          <form class="mx-auto" action="">
-
-            <div>
-              <h4>第一條 合約標的物：<a href="#signature-pad-area"><span class="black">＿  ＿  ＿  ＿  ＿  ＿</span></a></h4>
-            </div>
-
-            <div>
-              <h4>第二條 合約期限</h4>
-
-              <ol>
-                <li>乙方同意於中華民國 (下同) 110 年 12 月 31 日前完成專案。</li>
-                <li>若乙方未能依照期限繳交已完成之專案，須提前向甲方說明且經甲方同意後，延長繳交專案之期限。</li>
-                <li>若甲方必須提供本專案相關之文字及圖片資料供乙方執行製作使用，如因甲方製作素材提供延遲所致之專案遲延者，乙方扣除延遲之時日後，仍應按本工作進度完成之。</li>
-              </ol>
-            </div>
-
-            <div>
-              <h4>第三條 合約標的修改方式</h4>
-
-              <p>甲乙雙方於確認本專案之方向及設計風格無誤後，乙方應立即開始製作專案，若甲方對於 <br>
-               專案內容仍有問題需要修改專案，須立即通知乙方進行修改專案。
-              </p>
-            </div>
-
-            <div class="signature-pad-area text-center">
-
-              <h2 style="margin-bottom: 1em;">設計師簽名</h2>
-
-              <div id="signature-pad-area">
-                <canvas id="signature-pad" width="400" height="200"></canvas>
+              <div class="topic">
+                <h3>設計項目</h3>
               </div>
-      
-              <div class="clear-btn">
-                <span class="blue" id="clear">再試一次</span>
+
+              <div class="increment-area">
+
+                <div id="project-container"></div>
+
+                <button class="increment red btn-add">
+                  <i class="fa-solid fa-plus"></i>
+                  <span>新增</span>
+                </button>
+
               </div>
-                
-              <a href="">            
-                <span class="contract-button">確定</span>    
-              </a>
 
             </div>
 
-            <div class="text-center next-step">
+            <div class="timing">
 
-              <span class="contract-button">送出並進入專案</span>
-              
+              <div class="date-and-month">
+
+                <p id="date">11 月 2021</p>
+
+                <div class="month">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                  <p>4</p>
+                  <p>5</p>
+                  <p>6</p>
+                  <p>7</p>
+                  <p>8</p>
+                  <p>9</p>
+                  <p>10</p>
+                  <p>11</p>
+                  <p>12</p>
+                  <p>13</p>
+                  <p>14</p>
+                  <p>15</p>
+                  <p>16</p>
+                  <p>17</p>
+                  <p>18</p>
+                  <i class="fa-solid fa-angle-right red"></i>
+                </div>
+
+              </div>
+
+              <div class="increment-area">
+
+                <div id="project-container"></div>
+
+                <div class="nothing">
+                  <h3 class="grey text-center">尚未建立<span class="montserrat">Milestone</span></h2>
+                </div>
+
+              </div>
+
             </div>
 
-          </form>
+          </div>
 
         </div>
 
       </div>
+
+      <footer class="text-center">
+        <button class="contract-button">
+          <p>下一步</p>
+        </button>
+      </footer>
 
     </main>
 
@@ -241,7 +232,9 @@
 
     <script src="./assets/forms.js"></script>
 
-    <script src="./assets/signature-pad.js"></script>
+    <script src="./assets/page-selectable-contents.js"></script>
+
+    <script src="./assets/milestone.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

@@ -1,0 +1,21 @@
+.signature-pad-area{
+  margin: 5em 0 !important;
+}
+#signature-pad-area{
+  width: 400px; height: 250px;
+  border: 2px solid #DEDEE1;
+  border-radius: 10px; margin: auto;
+}
+canvas#signature-pad {
+  width: 100%; height: 100%;
+  cursor: crosshair;
+  z-index: 2000;
+}
+#clear{
+  cursor: pointer;
+  font-size: 18px;
+}
+.clear-btn{
+  padding: 1.25em 0;
+  margin: 0 !important;
+}

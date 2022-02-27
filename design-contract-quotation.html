@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS / Bootstrap-->
+  <link rel="stylesheet" href="./assets/main.css">
+
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
+  <link rel="stylesheet" href="./assets/tables-&-forms.css">
+
+  <link rel="stylesheet" href="./assets/signature-pad.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--JS / jQuery--> 
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Source | 專案列表 - 線上合約</title>
+
+  <style>
+
+    body{
+      font-family: "Noto Sans TC", sans-serif;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <aside class="sidebar" id="">
+
+      <div class="top-area">
+        
+          <ul>
+              <li>
+                  <a href="index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo">
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+
+                    <img src="./images/grey-pencil-vector.png" alt="Pencil-Vector">
+
+                    <span>設計規範</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="design-project.html">
+
+                    <img src="./images/red-list-vector.png" alt="List-Vector">
+
+                    <span class="red">專案列表</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="design-contact.html">
+
+                    <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
+
+                    <span>聯絡我們</span>
+
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+
+                    <img src="./images/chat-vector.png" alt="Chat-Vector">
+
+                    <span>詢問表單</span>
+
+                  </a>
+              </li>
+          </ul> 
+
+      </div>
+
+      <div class="bottom-area">
+
+          <ul>
+              <li>
+                  <a href="#">
+
+                    <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+
+                    <span class="red">通知中心</span>
+
+                  </a>
+              </li>
+          </ul>
+
+          <div class="user-area">
+  
+              <a href="">
+
+                <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+
+                <div class="user">
+
+                  <span>陳小明</span>
+                  
+                  <a href="">登出</a>
+
+                  <span class="montserrat">abc123@gmail.com</span>
+
+                </div>
+
+              </a>
+
+          </div>
+
+      </div>
+
+    </aside>
+
+    <main class="quotation">
+
+      <header class="text-center">
+
+        <img src="./images/route-5.png" alt="">
+        
+      </header>
+
+      <div class="quotation-list">
+
+        <div class="quotation-list-area">
+
+          <form class="quotation-form" action="">
+
+            <div class="form-format">
+
+              <div>
+
+                <h2>網站建置設計報價單</h2>
+
+                <div class="sub-title">
+                  
+                  <div>
+                    <span>日期：2021/5/31</span>
+                  </div>
+
+                  <div>
+                    <span>發票開立</span>
+                  </div>
+                  
+                  <div>
+                    <label class="checkbox-container">是
+                      <input type="checkbox" checked="checked" name="check" onclick="onlyOne(this)">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">否
+                      <input type="checkbox" checked="checked" name="check" onclick="onlyOne(this)">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="part-1 text-end">
+                  <p class="red">客戶名稱</p>
+                  <p class="red">聯絡人</p>
+                  <p class="red">地址</p>
+                  <p class="red">電話</p>
+                  <p class="red">電子郵件</p>
+                </div>
+
+                <div class="part-2">
+                  <p class="grey">索爾斯股份有限公司</p>
+                  <p class="grey">高官委</p>
+                  <p class="grey">新北XXXX-XXX15XX-1F</p>
+                  <p class="grey">02-2210-1999</p>
+                  <p class="grey">lemo@gmail.com</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </form>
+
+          <div class="service-table">
+
+            <h2 class="text-start bold topic">【一】網站系統設計與服務</h2>
+
+            <table class="table table-striped">
+
+              <tbody>
+
+                  <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                      <h2 class="bold red">主要項目</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">說明</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">價格</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">備註</h2>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="bold black">1</p>
+                    </td>
+                    <td>
+                      <p>網站企劃</p>
+                    </td>
+                    <td>
+                      <p>1.網站單元架構重整</p>
+                      <p>2.網站視覺風格</p>
+                      <p>3.網站各頁內容設計</p>
+                    </td>
+                    <td>
+                      <p>6000元</p>
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="bold black">2</p>
+                    </td>
+                    <td>
+                      <p>RWD網站語法設計</p>
+                    </td>
+                    <td>
+                      <p>網站使用響應式網頁設計RWD(Responsive Web Design)語法、規劃設計、自動對應多屏裝置、可隨使用者裝置(手機、平板、電腦)自動排版成相對應的瀏覽畫面</p>
+                    </td>
+                    <td>
+                      <p>6000元</p>
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="bold black">3</p>
+                    </td>
+                    <td>
+                      <p>網站資料上架</p>
+                    </td>
+                    <td>
+                      <p>網站上線前圖文內容上架(無校稿服務)，不含周邊景點及最新消息單元全站協助測試資料上架(無校稿服務)，例如商品、服務等，各單元最多3筆</p>
+                    </td>
+                    <td>
+                      <p>300元/月</p>
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="bold black">4</p>
+                    </td>
+                    <td>
+                      <p>SEO優化網站架構</p>
+                    </td>
+                    <td>
+                      <p class="">自動使用H標籤優化頁面文案權重</p>
+                      <p>全站內建Json-LD結構化資料，幫助搜尋引擎判讀網頁資料</p>
+                      <p>全網站建置以Google搜尋演算法喜愛的網站架構進行設計，有利於搜尋自然排名</p>
+                    </td>
+                    <td>
+                      <p>4500元</p>
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+          <div class="service-table">
+
+            <h2 class="text-start bold topic">【二】網站單元項目設計</h2>
+
+            <table class="table table-striped">
+
+              <tbody>
+
+                  <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                      <h2 class="bold red">主要項目</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">說明</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">價格</h2>
+                    </td>
+                    <td>
+                      <h2 class="bold red">備註</h2>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="bold black">1</p>
+                    </td>
+                    <td>
+                      <p>網站主視覺設計</p>
+                    </td>
+                    <td>
+                      <p>專業設計師依客戶需求容製化設計全站視覺風格並使用合法授權免費、商業圖庫，讓網站視覺更有記憶張力</p>
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+          <div class="signature-pad-area text-center">
+
+            <h2 style="margin-bottom: 1em;">設計師簽名</h2>
+
+            <div id="signature-pad-area">
+              <canvas id="signature-pad" width="400" height="200"></canvas>
+            </div>
+    
+            <div class="clear-btn">
+              <span class="blue" id="clear">再試一次</span>
+            </div>
+              
+            <a href="">            
+              <span class="contract-button">確定</span>    
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!--External JS-->
+    <script src="./assets/app.js"></script>
+
+    <script src="./assets/forms.js"></script>
+
+    <script src="./assets/signature-pad.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

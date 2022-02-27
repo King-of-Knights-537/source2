@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 .personal-info-setting form div.each-sections:nth-last-child(1) > div:nth-child(3){
-    margin-top: -2.25em !important;
+    margin-top: -1em !important;
 }
 .personal-info-setting form div.each-sections:nth-last-child(1) > div:nth-last-child(1) span{
     margin-left: -1.2em;

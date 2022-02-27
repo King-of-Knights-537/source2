@@ -378,6 +378,147 @@ section.application-function div{
     font-size: 18px; letter-spacing: 2.5px;
 }
 
+/*Quotation*/
+.quotation{
+    width: 100%; 
+    padding-left: 125px;
+    margin-top: 80px;
+}
+.quotation-list{
+    margin: auto;
+    width: 80%;
+    padding-top: 3.25em;
+}
+.quotation-list::before{
+    content: ''; width: 1000px; height: 22px;
+    background: url(../images/double-color-thick-line.svg);
+    position: absolute; background-repeat: no-repeat;
+    margin: auto; left: 0; right: 0;
+    transform: translateX(53px);
+}
+.quotation-form{
+    width: 70%; margin: auto;
+    margin-top: 3.5em; font-size: 18px;
+}
+.quotation-form .form-format{
+    display: flex;
+    justify-content: space-between;
+}
+.quotation-form h2{
+    font-size: 43px;
+}
+.quotation-form .sub-title{
+    display: flex;
+    justify-content: space-between;
+    width: 400px; font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* The container */
+.checkbox-container {
+    display: inline-block; position: relative;
+    padding-left: 35px;  margin-bottom: 12px;
+    cursor: pointer; user-select: none;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute; opacity: 0;
+    cursor: pointer; height: 0; width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute; top: 5px; left: 8px;
+    height: 20px; width: 20px;
+    background-color: #eee;
+    border-radius: 100%;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:focus ~ .checkmark {
+    background-color: #B02524;
+}
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    content: ""; position: absolute; display: block;
+    left: 7px; top: 3.3px;
+    width: 5.5px; height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.quotation-form .part-1{
+    width: 110px; 
+    font-weight: 600;
+}
+.quotation-form .part-1 p,
+.quotation-form .part-2 p{
+    font-size: 18px;
+    margin-bottom: 0em !important;
+}
+.quotation-form .part-2{
+    width: 250px;
+}
+.quotation .service-table{
+    margin: 4em 0;
+}
+
+/*Table*/
+.quotation table{
+    width: 95% !important;
+    margin-top: 1.25em;
+}
+.quotation .table>:not(caption)>*>* {
+    padding: 0 !important;
+    background-color: var(--bs-table-bg);
+    border-bottom: none;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+.quotation .table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #FFF;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(1){
+    --bs-table-accent-bg: #FFF;
+    width: 80px; 
+}
+.quotation .table tr:nth-child(1) td{
+    text-align: center;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(1)>p{
+    position: relative; left: 1em;
+    font-size: 26px; 
+}
+.quotation .table-striped>tbody>tr>td:nth-child(2){
+    padding-left: 2em !important;
+    padding-right: 1em !important;
+    width: 260px;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(3){
+    padding: 0.7em 1em !important;
+    padding-right: 4em !important;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(4){
+    padding: 0.7em 1em !important;
+    width: 150px; text-align: center;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(5){
+    width: 200px;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(3)>p{
+    font-size: 20px;
+}
+.quotation .table-striped>tbody>tr>td:nth-child(2),
+.quotation .table-striped>tbody>tr>td:nth-child(3),
+.quotation .table-striped>tbody>tr>td:nth-child(4){
+    border-right: 7px solid #FFF;
+}
+.quotation .table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+}
+
 /*Remuneration*/
 .remuneration{
     width: 100%; 

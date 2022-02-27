@@ -22,6 +22,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
 
@@ -169,13 +171,24 @@
               <p>姓名：</p>
             </div>
 
-            <div>
+            <div id="nameRoot">
 
               <div id="nameSettingFinished">
-                <p class="grey" id="name">王小明</p>
+                <p class="grey" id="name">{{ name }}</p>
               </div>
 
-              <input type="name" class="section-one name" placeholder="王小明">
+              <input type="name" class="section-one name" v-model="name">
+
+              <script>
+
+                new Vue({
+                    el: '#nameRoot',
+                    data: {
+                        name : '王小明'
+                    }
+                });
+    
+              </script>
 
             </div>
 
@@ -192,13 +205,24 @@
               <p>電話：</p>
             </div>
 
-            <div>
+            <div id="phoneRoot">
 
               <div id="phoneSettingFinished">
-                <p class="grey" id="phone">0912-3456789</p>
+                <p class="grey" id="phone">{{ phone }}</p>
               </div>
 
-              <input type="phone" class="section-one phone" placeholder="0912-3456789">
+              <input type="phone" class="section-one phone" v-model="phone">
+
+              <script>
+
+                new Vue({
+                    el: '#phoneRoot',
+                    data: {
+                        phone : '0912-3456789'
+                    }
+                });
+    
+              </script>
 
             </div>
 
@@ -214,15 +238,28 @@
             <div>
               <p>身分證字號：</p>
             </div>
-            <div>
+
+            <div id="identityRoot">
 
               <div id="identitySettingFinished">
-                <p class="grey" id="identity">A121345678</p>
+                <p class="grey" id="identity">{{ identity }}</p>
               </div>
 
-              <input type="id" class="section-one identity" placeholder="A121345678">
+              <input type="id" class="section-one identity" v-model="identity">
+
+              <script>
+
+                new Vue({
+                    el: '#identityRoot',
+                    data: {
+                      identity : 'A121345678',
+                    }
+                });
+    
+              </script>
 
             </div>
+
             <div>
               <span class="editor" id="editor3"></span>
               <span class="editor-button" id="editorButton3">完成</span>
@@ -315,13 +352,24 @@
               <p>電子郵件：</p>
             </div>
 
-            <div>
+            <div id="emailRoot">
 
               <div id="emailSettingFinished">
-                <p class="grey" id="email">abc_1234@gmail.com</p>
+                <p class="grey" id="email">{{ email }}</p>
               </div>
 
-              <input type="email" class="section-one email" placeholder="abc_1234@gmail.com">
+              <input type="email" class="section-one email" v-model="email">
+
+              <script>
+
+                new Vue({
+                    el: '#emailRoot',
+                    data: {
+                      email : 'abc_1234@gmail.com'
+                    }
+                });
+    
+              </script>
 
             </div>
 
@@ -338,7 +386,7 @@
               <p>密碼設定：</p>
             </div>
             
-            <div>
+            <div id="passwordRoot">
 
               <div id="passwordSettingFinished">
                 <p class="grey" id="password">已設定</p>
@@ -354,8 +402,8 @@
                   
                   <div class="change-password">
   
-                    <input id="password" type="password" class="section-one password">
-                    <span onclick="showHide()">
+                    <input id="password1" type="password" class="section-one password" v-model="oldPassword">
+                    <span onclick="showHide1()">
                       <i class="fa-solid fa-eye toggle" id="toggle"></i>
                     </span>
   
@@ -371,8 +419,8 @@
                   
                   <div class="change-password">
   
-                    <input id="password" type="password" class="section-one password">
-                    <span onclick="showHide()">
+                    <input id="password2" type="password" class="section-one password" v-model="newPassword">
+                    <span onclick="showHide2()">
                       <i class="fa-solid fa-eye toggle" id="toggle"></i>
                     </span>
   
@@ -388,14 +436,26 @@
                   
                   <div class="change-password">
   
-                    <input id="password" type="password" class="section-one password">
-                    <span onclick="showHide()">
+                    <input id="password3" type="password" class="section-one password" v-model="newPassword">
+                    <span onclick="showHide3()">
                       <i class="fa-solid fa-eye toggle" id="toggle"></i>
                     </span>
   
                   </div>
   
                 </div>
+
+                <script>
+
+                  new Vue({
+                      el: '#passwordRoot',
+                      data: {
+                        oldPassword : 'abcd#987',
+                        newPassword : '1254#ddd'
+                      }
+                  });
+      
+                </script>
 
               </div>
 
@@ -408,7 +468,7 @@
 
           </div>
 
-          <div class="each-sections">
+          <div class="each-sections" id="selectedSoftwareRoot">
 
             <div>
               <p>使用軟體類型：</p>
@@ -416,7 +476,7 @@
 
             <div class="selected-softwares">
 
-              <div class="selected-software">
+              <div class="selected-software" id="">
 
                 <div>
                   <p class="grey">Figma</p>
