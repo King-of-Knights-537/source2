@@ -1,0 +1,43 @@
+.route-navbar ul li{
+    display: inline-flex;
+    padding: 0 0.75em;
+}
+.route-navbar ul li a{
+    color: #000;
+}
+.route-navbar .red-point{
+    position: absolute;
+    border-radius: 100%;
+    background: #D11329;
+    width: 20px; height: 20px;
+    margin-top: -32px; 
+    margin-left: -10px;
+}
+.route-navbar .white-point{
+    position: absolute;
+    border-radius: 100%;
+    background: #FFF; 
+    border: 2px solid #000;
+    width: 20px; height: 20px;
+    margin-top: -32px;
+    margin-left: -10px;
+}
+.route-navbar .red-point::after{
+    content: '';
+    position: absolute;
+    background: #E1E1E1;
+    width: 100px; height: 10px;
+    margin-top: 5px;
+    z-index: -1;
+}
+.route-navbar .white-point::after{
+    content: '';
+    position: absolute;
+    background: #E1E1E1;
+    width: 100px; height: 10px;
+    margin-top: 2.5px;
+    z-index: -1;
+}
+.route-navbar ul li:nth-last-child(1) span::after{
+    content: none;
+}

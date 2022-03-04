@@ -11,6 +11,13 @@
 .toggle-slider{
     display: none;
 }
+.grey-bgcolor{
+    background: #F4F4F4;
+    width: 90%;
+}
+.grey-bgcolor h2{
+    padding: 0.55em 0;
+}
 
 /*Page-Contents*/
 .selectable-content{
@@ -254,6 +261,7 @@
     margin: 0.5em 0;
     margin-right: 2.6em !important;
 }
+.contract-maker nav h2.active::after,
 .design-and-progress-area nav h2.active::after{
     content: ""; position: relative; 
     display: block; top: 0.5em; height: 0.2em; 
@@ -292,13 +300,15 @@ section.application-function div{
 }
 .contract-maker-list .contracting,
 .contract-maker-list .outsourcing{
-    display: flex; 
+    display: flex !important; 
     justify-content: center;
+    background: white;
+    box-shadow: none;
 }
 .contract-maker-list .company{
-    width: 600px; display: flex;
+    width: 600px; display: flex !important;
     justify-content: space-between;
-    font-size: 25px; 
+    font-size: 25px; color: #000 !important;
 }
 .contract-maker-list .contents{
     margin-left: 5em;
@@ -319,12 +329,16 @@ section.application-function div{
 .contract-maker-list input[type="text"]{
     border: none !important; 
     outline: none !important;
-    width: 215px !important;
+    width: 230px !important;
     text-align: center;
+    background: none !important;
+    box-shadow: none;
 }
 .contract-maker-list input.short{
-    width: 100px !important;
+    width: 160px !important;
     text-align: center;
+    background: none !important;
+    box-shadow: none;
 }
 .contract-maker-list form h4{
     font-size: 25px;
@@ -595,7 +609,7 @@ section.application-function div{
     font-size: 25px;
 }
 .payment-setting .three-info .info{
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
 }
 .payment-setting .three-info input{

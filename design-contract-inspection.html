@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS / Bootstrap-->
+  <link rel="stylesheet" href="./assets/main.css">
+
+  <link rel="stylesheet" href="./assets/route-navbar.css">
+
+  <link rel="stylesheet" href="./assets/information-protection.css">
+
+  <link rel="stylesheet" href="./assets/page-selectable-contents.css">
+
+  <link rel="stylesheet" href="./assets/tables-&-forms.css">
+
+  <link rel="stylesheet" href="./assets/signature-pad.css">
+
+  <link rel="stylesheet" href="./assets/individual-input-form.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--JS / jQuery--> 
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Source | 專案列表 - 線上合約</title>
+
+  <style>
+
+    body{
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    header {
+      margin-top: 6em;
+    }
+    .first-contract-button{
+      position: absolute;
+      right: 3.5em;
+    }
+    .contract-maker{
+      margin-top: 0 !important;
+    }
+    .contract-maker-list, .payment-setting {
+      margin-top: -1em;
+    }
+    .contract-maker-list form ol{
+      position: relative; left: 3.15em;
+      color: #000 !important;
+    }
+    .contracting h3, .outsourcing h3{
+      margin: 0 !important;
+    }
+    span.next-step{
+      position: static !important;
+    }
+    span.black-line-button, span.light-grey-button{
+      border-radius: 32.5px; cursor: pointer;
+      letter-spacing: 2px; font-size: 22px;
+      margin: 0 1em;
+    }
+    span.black-line-button{
+      background: none; padding: 0.425em 2.5em;
+      border: 2px solid #000; color: #000;
+    }
+    span.light-grey-button{
+      background: rgba(0, 0, 0, 0.3);
+      border: none; color: #FFF;
+      padding: 0.5em 2em;
+    }
+    .loader-5 .outer h2{
+      margin-top: 3em;
+      margin-bottom: 0;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div class="loader-5">
+
+      <div class="alert-minder-area">
+
+        <div class="alert-minder-2">
+
+          <div class="outer">
+
+            <h2 class="bold text-center">請填寫您的帳號後五碼</h2>
+
+            <div class="pin-wrapper">
+              <input type="text" data-role="pin" maxlength="1">
+              <input type="text" data-role="pin" maxlength="1">
+              <input type="text" data-role="pin" maxlength="1">
+              <input type="text" data-role="pin" maxlength="1">
+              <input type="text" data-role="pin" maxlength="1">
+            </div>
+
+            <div class="text-center">
+              <span class="black-line-button close">取消</span>
+              <span class="light-grey-button">下一步</span>
+            </div>
+
+            <div class="text-center" style="margin-top: 1.75em;">
+              <p class="grey">填寫完畢後我們會進行核對</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <aside class="sidebar" id="">
+
+      <div class="top-area">
+        
+          <ul>
+              <li>
+                  <a href="index.html">
+                    <img src="./images/logo.png" alt="Logo" class="logo">
+                  </a>
+              </li>
+              <li>
+                  <a href="design-project.html">
+
+                    <img src="./images/red-list-vector.png" alt="List-Vector">
+
+                    <span class="red">專案列表</span>
+          
+                  </a>
+              </li>
+              <li>
+                  <a href="design-contact.html">
+
+                    <img src="./images/phone-call-vector.png" alt="Phone-Call-Vector">
+
+                    <span>聯絡我們</span>
+
+                  </a>
+              </li>
+          </ul> 
+
+      </div>
+
+      <div class="bottom-area">
+
+          <ul>
+              <li>
+                  <a href="#">
+
+                    <img class="" src="./images/bell-vector.png" alt="Bell-Vector">
+
+                    <span class="red">通知中心</span>
+
+                  </a>
+              </li>
+          </ul>
+
+          <div class="user-area">
+  
+              <a href="">
+
+                <img src="./images/wrapper-icon.png" alt="Your-Icon" class="user-icon">
+
+                <div class="user">
+
+                  <span>陳小明</span>
+                  
+                  <a href="">登出</a>
+
+                  <span class="montserrat">abc123@gmail.com</span>
+
+                </div>
+
+              </a>
+
+          </div>
+
+      </div>
+
+    </aside>
+
+    <header class="text-center">
+
+      <nav class="route-navbar">
+        <ul>
+          <li>
+            <a href="">
+              <span class="red-point"></span>
+              <p>設計需求</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="red-point"></span>
+              <p>線上合約</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="white-point"></span>
+              <p>Milestone</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="red-point"></span>
+              <p>檔案下載</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="white-point"></span>
+              <p>上傳UI</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="white-point"></span>
+              <p>上傳UI設計檔</p>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main class="contract-maker selectable-content">
+
+      <section class='section-1 active'>
+
+        <nav class="inside-navbar text-start">
+        
+          <ul>
+            <li> 
+              <h2 class='btn-1 active'>合約</h2>
+            </li>
+            <li>
+              <h2 class='btn-2'>勞務報酬單</h2>
+            </li>
+            <li>
+              <h2 class='btn-3'>專案金額</h2>
+            </li>
+            <li>
+              <h2 class='btn-4'>匯款資料</h2>
+            </li>
+          </ul> 
+
+        </nav>
+
+        <section class='section-1 active'>
+
+          <div class="content-1 active">
+
+              <main>
+
+                <div class="contract-maker-list black">
+
+                  <button class="contract-button first-contract-button"><p>下載<span class="montserrat">PDF</span></p></button>
+
+                  <h2 class="text-center bold black">專案外包合約書</h2>
+
+                  <div class="contracting">
+      
+                    <div class="company">
+          
+                      <div>
+                        <h3>發包單位索爾斯科技有限公司</h2>
+                      </div>
+            
+                      <div>
+                        <h3>(以下簡稱甲方)</h2>
+                      </div>
+            
+                    </div>
+          
+                  </div>
+
+                  <div class="outsourcing">
+
+                    <div class="company">
+            
+                      <div>
+                        <h3>承包單位</h3>
+                      </div>
+            
+                      <div>
+                        <h3>(以下簡稱乙方)</h3>
+                      </div>
+            
+                    </div>
+                    
+                  </div>
+
+                  <h3 class="text-center provement">甲方委託乙方 <input class="short" type="text" placeholder="＿ ＿ ＿"> 網頁專案，經雙方同意所訂合約條款如下：</h3>
+
+                  <form class="mx-auto" action="">
+
+                    <div class="text-start">
+                      <h4>第一條 合約標的物：<input type="text" placeholder="＿  ＿  ＿  ＿  ＿  ＿"></h4>
+                    </div>
+        
+                    <div class="text-start">
+                      <h4>第二條 合約期限</h4>
+        
+                      <ol>
+                        <li>乙方同意於中華民國 (下同) 110 年 12 月 31 日前完成專案。</li>
+                        <li>若乙方未能依照期限繳交已完成之專案，須提前向甲方說明且經甲方同意後，延長繳交專案之期限。</li>
+                        <li>若甲方必須提供本專案相關之文字及圖片資料供乙方執行製作使用，如因甲方製作素材提供延遲所致之專案遲延者，乙方扣除延遲之時日後，仍應按本工作進度完成之。</li>
+                      </ol>
+                    </div>
+
+                  </form>
+
+                </div>
+
+              </main>
+
+          </div>
+
+          <div class="content-2">
+
+            <main>
+
+              <div>
+
+                <div class="payment-setting">
+
+                  <header class="grey-bgcolor mx-auto">
+                    <h2 class="bold text-center black">匯款資料</h2>
+                  </header>
+          
+                  <form class="payment-form text-start" action="">
+          
+                    <div class="three-info">
+          
+                      <div class="info">
+                        <label for="">代碼：</label>
+                        <input type="text">
+                      </div>
+          
+                      <div class="info">
+                        <label for="">銀行：</label>
+                        <input type="text">
+                      </div>
+          
+                      <div class="info">
+                        <label for="">分行：</label>
+                        <input type="text">
+                      </div>
+          
+                    </div>
+          
+                    <div class="long-info">
+                      <label for="">帳號：</label>
+                      <input type="text">
+                    </div>
+          
+                    <div class="long-info">
+                      <label for="">戶名：</label>
+                      <input type="text">
+                    </div>
+          
+                  </form>
+          
+                  <div class="text-center" style="margin-top: 7em;">
+          
+                    <span class="contract-button to-contract">下一步</span>
+
+                    <p style="margin-top: 1em;">匯款完成請點選下一步填寫匯款後五碼</p>
+                    
+                  </div>
+          
+                </div>
+
+              </div>
+
+            </main>
+
+          </div>
+
+      </section>
+
+    </main>
+
+    <!--External JS-->
+    <script src="./assets/app.js"></script>
+
+    <script src="./assets/forms.js"></script>
+
+    <script src="./assets/page-selectable-contents.js"></script>
+
+    <script src="./assets/signature-pad.js"></script>
+
+    <script src="./assets/individual-input-form.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
