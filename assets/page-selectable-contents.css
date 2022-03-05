@@ -425,40 +425,21 @@ section.application-function div{
     letter-spacing: 1px;
 }
 
-/* The container */
-.checkbox-container {
-    display: inline-block; position: relative;
-    padding-left: 35px;  margin-bottom: 12px;
-    cursor: pointer; user-select: none;
+/*Checkbox*/
+input[type="checkbox"]{
+    width: 20px; height: 20px; cursor: pointer;
+    background: #EFEFEF; border-radius: 100%;
+    vertical-align: middle; outline: none; 
+    appearance: none; -webkit-appearance: none;
+    content: '';
 }
-/* Hide the browser's default checkbox */
-.checkbox-container input {
-    position: absolute; opacity: 0;
-    cursor: pointer; height: 0; width: 0;
+input[type="checkbox"]:checked{
+    background: #B02524; font-size: 12px;
 }
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute; top: 5px; left: 8px;
-    height: 20px; width: 20px;
-    background-color: #eee;
-    border-radius: 100%;
-}
-/* When the checkbox is checked, add a blue background */
-.checkbox-container input:focus ~ .checkmark {
-    background-color: #B02524;
-}
-/* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-}
-/* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
-    content: ""; position: absolute; display: block;
-    left: 7px; top: 3.3px;
-    width: 5.5px; height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+input[type=checkbox]:checked:before {
+    content:"\2713"; color: white;
+    font-weight: bold;
+    position: relative; left: 5px;
 }
 
 .quotation-form .part-1{
