@@ -23,7 +23,6 @@
 .selectable-content{
     width: 100%; 
     padding-left: 125px;
-    margin-top: 80px;
 }
 .selectable-content header{
     margin: 2em 0;
@@ -290,7 +289,6 @@ section.application-function div{
 .contract-maker{
     width: 100%; 
     padding-left: 125px;
-    margin-top: 80px;
 }
 .contract-maker-list{
     margin-top: 5em;
@@ -396,7 +394,6 @@ section.application-function div{
 .quotation{
     width: 100%; 
     padding-left: 125px;
-    margin-top: 80px;
 }
 .quotation-list{
     margin: auto;
@@ -537,7 +534,6 @@ section.application-function div{
 .remuneration{
     width: 100%; 
     padding-left: 125px;
-    margin-top: 80px;
 }
 .remuneration-list{
     margin-top: 5em;
@@ -858,7 +854,6 @@ section.application-function div{
 .demand-file-area{
     width: 100%;
     padding-left: 125px;
-    margin-top: 80px;
 }
 .demand-file-area .management{
     width: 88%; margin: 0 6em;
@@ -921,7 +916,6 @@ section.application-function div{
 .notification{
     width: 90%; 
     padding-left: 15em;
-    margin-top: 80px;
 }
 .notification header{
     display: inline-flex;
