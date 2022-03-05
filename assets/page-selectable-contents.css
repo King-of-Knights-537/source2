@@ -916,6 +916,7 @@ section.application-function div{
 .notification{
     width: 90%; 
     padding-left: 15em;
+    margin-top: 5em;
 }
 .notification header{
     display: inline-flex;
